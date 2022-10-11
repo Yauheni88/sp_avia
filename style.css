@@ -1421,6 +1421,7 @@ body {
 .text__line {
   padding: 10px 0;
   background-color: #F3F3F3;
+  overflow: hidden;
 }
 .text__line-border {
   position: relative;
