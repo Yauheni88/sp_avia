@@ -1570,6 +1570,8 @@ body {
 }
 .footer__wrapper-adress-text {
   pointer-events: none;
+  text-decoration: none;
+  color: #ffffff;
 }
 .footer__wrapper-adress-text:nth-child(3) {
   margin: 24px auto 12px auto;
