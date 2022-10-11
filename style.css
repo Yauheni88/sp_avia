@@ -1568,6 +1568,9 @@ body {
   line-height: 150%;
   margin-bottom: 15px;
 }
+.footer__wrapper-adress-text {
+  pointer-events: none;
+}
 .footer__wrapper-adress-text:nth-child(3) {
   margin: 24px auto 12px auto;
 }
