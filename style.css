@@ -1203,7 +1203,7 @@ body {
     columns: 2;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 480px) {
   .gallery__box {
     columns: 1;
   }
