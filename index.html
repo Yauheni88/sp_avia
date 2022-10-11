@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./assets/fancybox/fancybox.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Авиа прогулки над Екатеринбургом</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="header__logo">
+                    <svg width="73" height="46" viewBox="0 0 73 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_506_158)">
+                        <path class="header__logo-svg" d="M34.9941 46L31.5521 42.3537V23.9817C31.6955 23.9817 1.29077 6.17073 0 0L34.9941 22.439V46Z" fill="#000E2A"/>
+                        <path class="header__logo-svg" d="M28.6837 38.5671L26.1022 35.7622V26.5061C26.1022 26.5061 10.8998 19.7744 7.7446 12.6219L28.6837 25.3841V38.5671Z" fill="#000E2A"/>
+                        <path class="header__logo-svg" d="M38.0059 46L41.4479 42.3537V23.9817C41.4479 23.9817 71.8527 6.31098 73.1434 0L38.0059 22.439V46Z" fill="#000E2A"/>
+                        <path class="header__logo-svg" d="M44.3163 38.5671L46.8978 35.7622V26.5061C46.8978 26.5061 62.1002 19.7744 65.2554 12.6219L44.3163 25.3841V38.5671Z" fill="#000E2A"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_506_158">
+                        <rect width="73" height="46" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>                        
+                </a>
+                <nav class="header__navigation header__navigation-menu">
+                    <ul class="header__menu">
+                        <li class="header__item">
+                            <a href="#whom" class="header__link">Для кого</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#aircraft" class="header__link">На чем летаем</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#tariffs" class="header__link">Тарифы</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#offers" class="header__link">Особые предложения</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#why" class="header__link">Почему мы</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#gallery" class="header__link">Галерея</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#blog" class="header__link">Блог</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#footer" class="header__link">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="header__contacts">
+                        <a href="tel:+7343000000" class="header__contacts-phone">+7 (343) 000 00 00</a>
+                        <a href="mailto:info@mail.com" class="header__contacts-email">info@mail.com</a>
+                    </div>
+                    <ul class="header__social">
+                        <li class="header__social-item">
+                            <a href="#" class="header__social-whatsUp">
+                                <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="header__social-svg" d="M17.8125 3.59375C15.8906 1.625 13.2656 0.5 10.4531 0.5C4.73438 0.5 0.046875 5.1875 0.046875 10.9062C0.046875 12.7812 0.5625 14.5625 1.45312 16.1094L0 21.5L5.48438 20.0938C7.03125 20.8906 8.71875 21.3594 10.4531 21.3594C16.2188 21.3594 21 16.6719 21 10.9531C21 8.14062 19.7812 5.5625 17.8125 3.59375ZM10.4531 19.5781C8.90625 19.5781 7.40625 19.1562 6.04688 18.3594L5.76562 18.1719L2.48438 19.0625L3.375 15.875L3.14062 15.5469C2.29688 14.1406 1.82812 12.5469 1.82812 10.9062C1.82812 6.17188 5.71875 2.28125 10.5 2.28125C12.7969 2.28125 14.9531 3.17188 16.5938 4.8125C18.2344 6.45312 19.2188 8.60938 19.2188 10.9531C19.2188 15.6875 15.2344 19.5781 10.4531 19.5781ZM15.2344 13.1094C14.9531 12.9688 13.6875 12.3594 13.4531 12.2656C13.2188 12.1719 13.0312 12.125 12.8438 12.4062C12.7031 12.6406 12.1875 13.25 12.0469 13.4375C11.8594 13.5781 11.7188 13.625 11.4844 13.4844C9.9375 12.7344 8.95312 12.125 7.92188 10.3906C7.64062 9.92188 8.20312 9.96875 8.67188 8.98438C8.76562 8.79688 8.71875 8.65625 8.67188 8.51562C8.625 8.375 8.0625 7.10938 7.875 6.59375C7.64062 6.07812 7.45312 6.125 7.26562 6.125C7.125 6.125 6.9375 6.125 6.79688 6.125C6.60938 6.125 6.32812 6.17188 6.09375 6.45312C5.85938 6.73438 5.20312 7.34375 5.20312 8.60938C5.20312 9.92188 6.09375 11.1406 6.23438 11.3281C6.375 11.4688 8.0625 14.0938 10.6875 15.2188C12.3281 15.9688 12.9844 16.0156 13.8281 15.875C14.2969 15.8281 15.3281 15.2656 15.5625 14.6562C15.7969 14.0469 15.7969 13.5312 15.7031 13.4375C15.6562 13.2969 15.4688 13.25 15.2344 13.1094Z" fill="#000E2A"/>
+                                </svg>   
+                            </a>
+                        </li>
+                        <li class="header__social-item">
+                            <a href="#" class="header__social-telegram">
+                                <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="header__social-svg" d="M21.9062 2.64062C22.1875 1.32812 21.4375 0.8125 20.5938 1.14062L1.9375 8.3125C0.671875 8.82812 0.71875 9.53125 1.75 9.85938L6.48438 11.3125L17.5469 4.375C18.0625 4 18.5781 4.23438 18.1562 4.5625L9.20312 12.625L8.875 17.5469C9.39062 17.5469 9.57812 17.3594 9.85938 17.0781L12.1562 14.8281L16.9844 18.3906C17.875 18.9062 18.5312 18.625 18.7656 17.5938L21.9062 2.64062Z" fill="#000E2A"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header__btn" data-modal-button="modal-1">забронировать полет</button>
+                <div class="header__hamburger">
+                    <svg class="header__hamburger-svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" fill="#000E2A"/>
+                        <rect x="13.6863" y="15.1005" width="3" height="30" rx="1.5" transform="rotate(-45 13.6863 15.1005)" fill="white"/>
+                        <rect x="15.8076" y="37.0209" width="3" height="30" rx="1.5" transform="rotate(-135 15.8076 37.0209)" fill="white"/>
+                    </svg>
+                    <span class="header__hamburger-line"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero section" id="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <div class="hero__wrapper">
+                        <h1 class="hero__title">Авиа прогулки над Екатеринбургом</h1>
+                        <button class="hero__btn-book-flight" data-modal-button="modal-1">забронировать полет</button>
+                    </div>
+                </div>
+                <p class="hero__text">Хотите получить незабываемые впечатления? Почувствовать себя настоящим авиатором? 
+                    Порадовать близкого человека? Прогулка на частном самолете над городом стала доступнее!
+                </p>
+            </div>
+        </section>
+
+
+        <section class="whom section" id="whom">
+            <div class="container">
+                <div class="whom__inner">
+                    <h2 class="whom__title">Для кого?</h2>
+                    <p class="whom__text">Неважно, романтичная вы натура или авантюрист, мечтатель или прагматик, взрослый или ребенок. 
+                        Прогулка на самолете малой авиации подарит вам ни с чем несравнимые эмоции.
+                    </p>
+                    <div class="whom__swiper swiper">
+                        <div class="whom__swiper-wrapper swiper-wrapper">
+                            <div class="whom__swiper-slide swiper-slide">
+                                <img src="./assets/img/whom1.png" data-fancybox="whom-slider" alt="">
+                            </div>
+                            <div class="whom__swiper-slide swiper-slide">
+                                <img src="./assets/img/whom2.png" data-fancybox="whom-slider" alt="">
+                            </div>
+                            <div class="whom__swiper-slide swiper-slide">
+                                <img src="./assets/img/whom3.png" data-fancybox="whom-slider" alt="">
+                            </div>
+                        </div>
+                        <div class="whom__swiper-pagination swiper-pagination"></div>
+                        <div class="whom__swiper-scrollbar swiper-scrollbar"></div>
+                    </div>
+                    <p class="whom__text">Незабываемые впечатления, потрясающие виды, фантастический опыт – всё это вы откроете для себя с нашей компанией.<br> 
+                        Свидание, экскурсия, фотосессия – доверьтесь нашей компании и испытайте по-настоящему высокий уровень сервиса!
+                        </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="aircraft section" id="aircraft">
+            <div class="container">
+                <div class="aircraft__inner">
+                    <div class="aircraft__left">
+                        <h2 class="aircraft__title">На чем полетим?</h2>
+                        <span class="aircraft__type">Cessna 172</span>
+                        <p class="aircraft__description">Самолет вмещает до 3-х человек, либо 2 + фотограф</p>
+                        <img class="aircraft__image" src="./assets/img/cesna172.png" alt="Самолет Cesna 172">
+                    </div>
+                    <div class="aircraft__right">
+                        <p class="aircraft__rigth-text">Прогулки проводятся на самом массовом и безопасном самолете 
+                            в своем классе за всю историю: Cessna 172. 
+                            Любовь авиаторов он заслужил невиданным ранее уровнем комфорта, надежности и управляемости.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="tariffs section" id="tariffs">
+            <div class="container">
+                <div class="tariffs__inner">
+                    <h2 class="tariffs__title">Среди предложенных маршрутов каждый найдет для себя подходящий:</h2>
+                    <div class="tariffs__cards">
+                        <article class="tariffs__card" data-modal-button="modal-20">
+                            <span class="tariffs__card-number">20</span>
+                            <h3 class="tariffs__card-title">Взлет-посадка</h3>
+                            <p class="tariffs__card-text">20 минут – для тех, кому важны эмоции от взлета и посадки</p>
+                            <a href="" class="tariffs__card-more">подробнее</a>
+                        </article>
+                        <article class="tariffs__card" data-modal-button="modal-30">
+                            <span class="tariffs__card-number">30</span>
+                            <h3 class="tariffs__card-title">обзорная</h3>
+                            <p class="tariffs__card-text">30 минут – обзорная экскурсия над главной достопримечательностью в 
+                                окрестностях аэродрома «Логиново»: порогом Ревун
+                            </p>
+                            <a href="#" class="tariffs__card-more">подробнее</a>
+                        </article>
+                        <article class="tariffs__card" data-modal-button="modal-45">
+                            <span class="tariffs__card-number">45</span>
+                            <h3 class="tariffs__card-title">уральский марс</h3>
+                            <p class="tariffs__card-text">45 минут – отправьтесь в настоящее путешествие над 
+                                уральскими лесами на «другую планету»: Уральский Марс.
+                            </p>
+                            <a href="#" class="tariffs__card-more">подробнее</a>
+                        </article>
+                        <article class="tariffs__card" data-modal-button="modal-60">
+                            <span class="tariffs__card-number">60</span>
+                            <h3 class="tariffs__card-title">центр</h3>
+                            <p class="tariffs__card-text">60 минут – откройте для себя Екатеринбург с новой стороны! 
+                                Прогулка вокруг города, с видом на главные красоты и достопримечательности.
+                            </p>
+                            <a href="#" class="tariffs__card-more">подробнее</a>
+                        </article>
+                    </div>
+                    <p class="tariffs__note">*Полет по Вашему маршруту! Согласовывается за ранее.</p>
+                    <button class="tariffs__btn btn__book-flight" data-modal-button="modal-1">забронировать полет</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- модалка BookFl -->
+        <div class="modal__box">
+            <div class="modals-fade hidden" id="modal-1" data-modal>
+                <div class="modal__window bookfl">
+                    <svg class="bookfl__close-svg" data-modal-close type="button" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="25" fill="#000E2A"/>
+                        <rect x="13.6863" y="15.1005" width="3" height="30" rx="1.5" transform="rotate(-45 13.6863 15.1005)" fill="white"/>
+                        <rect x="15.8076" y="37.0209" width="3" height="30" rx="1.5" transform="rotate(-135 15.8076 37.0209)" fill="white"/>
+                    </svg>      
+                    <a href="#" class="bookfl__logo">
+                        <svg class="bookfl__logo-svg" width="73" height="46" viewBox="0 0 73 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_506_158)">
+                            <path d="M34.9941 46L31.5521 42.3537V23.9817C31.6955 23.9817 1.29077 6.17073 0 0L34.9941 22.439V46Z" fill="#000E2A"/>
+                            <path d="M28.6837 38.5671L26.1022 35.7622V26.5061C26.1022 26.5061 10.8998 19.7744 7.7446 12.6219L28.6837 25.3841V38.5671Z" fill="#000E2A"/>
+                            <path d="M38.0059 46L41.4479 42.3537V23.9817C41.4479 23.9817 71.8527 6.31098 73.1434 0L38.0059 22.439V46Z" fill="#000E2A"/>
+                            <path d="M44.3163 38.5671L46.8978 35.7622V26.5061C46.8978 26.5061 62.1002 19.7744 65.2554 12.6219L44.3163 25.3841V38.5671Z" fill="#000E2A"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_506_158">
+                            <rect width="73" height="46" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <div class="bookfl__title">Забронировать полет</div>
+                    <form class="bookfl__form">
+                        <label class="bookfl__form-label-1" for="bookfl__form-name">Ваше имя</label>
+                        <input class="bookfl__form-name" id="bookfl__form-name" type="text">
+                        <label class="bookfl__form-label-2" for="bookfl__form-surname">Ваш телефон</label>
+                        <input class="bookfl__form-surname" id="bookfl__form-surname" type="text">
+                    </form>
+                    <div class="bookfl__wrapper">
+                        <input class="bookfl__checkbox" type="checkbox" name="" id="" checked>
+                        <p class="bookfl__text">Нажимая кн. “Отправить” вы соглашаетесь с нашей <a class="bookfl__text-link" href="#">политикой конфиденциальности</a></p>
+                    </div>
+                    <button class="bookfl__btn-send" type="submit">Отправить</button>
+                </div>
+            </div> 
+
+            <!-- модалки на тарифы -->
+
+            <!-- модалка 20 -->
+            <div class="modals-fade hidden" id="modal-20" data-modal>
+                <article class="modal__window tariffs__modal modal-20">
+                    <div class="tariffs__modal-left">
+                        <img src="./assets/img/map-1.jpg" alt="маршрут-20">
+                        <div class="tariffs__modal-navigation">
+                            <div class="tariffs__modal-resize">
+                                <svg class="tariffs__modal-plus" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="8" width="2" height="14" transform="rotate(-90 0 8)" fill="#000E2A"/>
+                                    <rect y="8" width="2" height="14" transform="rotate(-90 0 8)" fill="#000E2A"/>
+                                    <rect x="6" width="2" height="14" fill="#000E2A"/>
+                                    <rect x="6" width="2" height="14" fill="#000E2A"/>
+                                </svg>
+                                <svg class="tariffs__modal-minus" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="2" width="2" height="14" transform="rotate(-90 0 2)" fill="#000E2A"/>
+                                    <rect y="2" width="2" height="14" transform="rotate(-90 0 2)" fill="#000E2A"/>
+                                </svg>   
+                            </div>
+                            <div class="tariffs__modal-arrowbox">
+                                <svg class="tariffs__modal-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.5 0L0 8.5L7 11L9 18L17.5 0Z" fill="#000E2A"/>
+                                </svg> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tariffs__modal-right">
+                        <svg class="tariffs__modal-right-close-btn" data-modal-close width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="25" cy="25" r="25" fill="#000E2A"/>
+                                <rect x="13.6863" y="15.1005" width="3" height="30" rx="1.5" transform="rotate(-45 13.6863 15.1005)" fill="white"/>
+                                <rect x="15.8076" y="37.0209" width="3" height="30" rx="1.5" transform="rotate(-135 15.8076 37.0209)" fill="white"/>
+                        </svg>
+                        <div class="tariffs__modal-description">
+                            <h3 class="tariffs__modal-description-title">Взлет-посадка</h3>
+                            <p class="tariffs__modal-description-text">Время полета: <span class="tariffs__modal-description-text-span">20 минут</span></p>
+                            <p class="tariffs__modal-description-text">Стоимость прогулки: <span class="tariffs__modal-description-text-span">от 3200 рублей с человека!</span></p>
+                            <div class="tariffs__modal-description-wrapper">
+                                <svg class="tariffs__modal-description-icon-person" width="45" height="46" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="22.5" cy="23" r="22.5" fill="#4CA1DA"/>
+                                    <path d="M34.077 29.3922H30.8462V26.1615C30.8462 25.9167 30.7489 25.6819 30.5758 25.5088C30.4027 25.3357 30.1679 25.2384 29.9231 25.2384C29.6783 25.2384 29.4435 25.3357 29.2704 25.5088C29.0973 25.6819 29 25.9167 29 26.1615V29.3922H25.7693C25.5245 29.3922 25.2897 29.4895 25.1166 29.6626C24.9434 29.8357 24.8462 30.0705 24.8462 30.3153C24.8462 30.5601 24.9434 30.7949 25.1166 30.968C25.2897 31.1412 25.5245 31.2384 25.7693 31.2384H29V34.4692C29 34.714 29.0973 34.9488 29.2704 35.1219C29.4435 35.295 29.6783 35.3922 29.9231 35.3922C30.1679 35.3922 30.4027 35.295 30.5758 35.1219C30.7489 34.9488 30.8462 34.714 30.8462 34.4692V31.2384H34.077C34.3218 31.2384 34.5566 31.1412 34.7297 30.968C34.9028 30.7949 35 30.5601 35 30.3153C35 30.0705 34.9028 29.8357 34.7297 29.6626C34.5566 29.4895 34.3218 29.3922 34.077 29.3922Z" fill="white"/>
+                                    <path d="M23 35.3923H13.7692C13.5244 35.3923 13.2896 35.295 13.1165 35.1219C12.9434 34.9488 12.8462 34.714 12.8462 34.4692C12.8493 31.7772 13.9201 29.1964 15.8237 27.2929C17.7272 25.3893 20.308 24.3185 23 24.3154C24.7841 24.3209 26.5103 23.6823 27.8613 22.5169C29.2123 21.3516 30.0973 19.7378 30.3537 17.9722C30.6101 16.2065 30.2206 14.4077 29.2569 12.9062C28.2931 11.4048 26.8198 10.3016 25.1078 9.79946C23.3958 9.29731 21.56 9.42992 19.938 10.1729C18.3159 10.9159 17.0165 12.2194 16.2785 13.8438C15.5406 15.4682 15.4137 17.3043 15.9212 19.0148C16.4287 20.7252 17.5365 22.1951 19.0409 23.1541C16.6943 23.976 14.6606 25.5058 13.2204 27.5325C11.7801 29.5592 11.0043 31.9829 11 34.4692C11 35.2036 11.2918 35.908 11.8111 36.4273C12.3304 36.9467 13.0348 37.2384 13.7692 37.2384H23C23.2448 37.2384 23.4796 37.1412 23.6527 36.9681C23.8258 36.795 23.9231 36.5602 23.9231 36.3154C23.9231 36.0705 23.8258 35.8357 23.6527 35.6626C23.4796 35.4895 23.2448 35.3923 23 35.3923ZM17.4615 16.9307C17.4615 15.8353 17.7864 14.7645 18.3949 13.8537C19.0035 12.9429 19.8685 12.2331 20.8805 11.8139C21.8925 11.3947 23.0061 11.285 24.0805 11.4987C25.1549 11.7124 26.1417 12.2399 26.9163 13.0145C27.6909 13.789 28.2183 14.7759 28.432 15.8502C28.6457 16.9246 28.5361 18.0382 28.1169 19.0502C27.6977 20.0622 26.9878 20.9272 26.077 21.5358C25.1662 22.1444 24.0954 22.4692 23 22.4692C21.5316 22.4677 20.1237 21.8837 19.0853 20.8454C18.047 19.8071 17.463 18.3992 17.4615 16.9307Z" fill="white"/>
+                                </svg>
+                                <p class="tariffs__modal-description-wrapper-text">самолет вмещает <span class="tariffs__modal-description-text-span">до 3-х человек,</span><br> 
+                                        для полета оплачивается цена за троих: 9600 рублей</p>
+                            </div>
+                        </div>
+                        <div class="tariffs__modal-instructions">
+                            <p class="tariffs__modal-instructions-title">Как полететь?</p>
+                            <div class="tariffs__modal-instructions-cards">
+                                <div class="tariffs__modal-instructions-card">
+                                    <p class="tariffs__modal-instructions-card-title">#1</p>
+                                    <p class="tariffs__modal-instructions-card-text">Бронируете и оплачиваете полет на нашем сайте</p>
+                                    <button class="tariffs__modal-instructions-card-btn" data-modal-close data-modal-button="modal-1">Забронировать</button>
+                                </div>
+                                <div class="tariffs__modal-instructions-card">
+                                    <p class="tariffs__modal-instructions-card-title">#2</p>
+                                        <p class="tariffs__modal-instructions-card-text">В назначенный день приезжаете 
+                                                на аэродром «Логиново» за 
+                                                15 минут до начала полета для проведения инструктажа и 
+                                                обзорной экскурсии
+                                        </p>
+                                </div>
+                                <div class="tariffs__modal-instructions-card">
+                                    <p class="tariffs__modal-instructions-card-title">#3</p>
+                                    <p class="tariffs__modal-instructions-card-text">Занимаете места в самолете и 
+                                                наслаждаетесь авиапрогулкой
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="tariffs__modal-instructions-note">
+                                <span class="tariffs__modal-description-text-span">Не беспокойтесь о безопасности!</span> Все самолеты проходят предполетный осмотр перед каждой прогулкой, а за штурвалом вас ждут опытные пилоты с огромным опытом.
+                            </p>
+                        </div>
+                        <button class="tariffs__modal-pay-btn">оплатить</button>
+                    </div>
+                </article>
+            </div>
+
+            <!-- модалка 30 -->
+            <div class="modals-fade hidden" id="modal-30" data-modal>
+                <article class="modal__window tariffs__modal modal-20">
+                    <div class="tariffs__modal-left">
+                        <img src="./assets/img/map-30.jpg" alt="маршрут-30">
+                        <div class="tariffs__modal-navigation">
+                            <div class="tariffs__modal-resize">
+                                <svg class="tariffs__modal-plus" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="8" width="2" height="14" transform="rotate(-90 0 8)" fill="#000E2A"/>
+                                    <rect y="8" width="2" height="14" transform="rotate(-90 0 8)" fill="#000E2A"/>
+                                    <rect x="6" width="2" height="14" fill="#000E2A"/>
+                                    <rect x="6" width="2" height="14" fill="#000E2A"/>
+                                </svg>
+                                <svg class="tariffs__modal-minus" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="2" width="2" height="14" transform="rotate(-90 0 2)" fill="#000E2A"/>
+                                    <rect y="2" width="2" height="14" transform="rotate(-90 0 2)" fill="#000E2A"/>
+                                </svg>   
+                            </div>
+                            <div class="tariffs__modal-arrowbox">
+                                <svg class="tariffs__modal-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.5 0L0 8.5L7 11L9 18L17.5 0Z" fill="#000E2A"/>
+                                </svg> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tariffs__modal-right">
+                        <svg class="tariffs__modal-right-close-btn" data-modal-close width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="25" cy="25" r="25" fill="#000E2A"/>
+                                <rect x="13.6863" y="15.1005" width="3" height="30" rx="1.5" transform="rotate(-45 13.6863 15.1005)" fill="white"/>
+                                <rect x="15.8076" y="37.0209" width="3" height="30" rx="1.5" transform="rotate(-135 15.8076 37.0209)" fill="white"/>
+                        </svg>
+                        <div class="tariffs__modal-description">
+                            <h3 class="tariffs__modal-description-title">Взлет-посадка</h3>
+                            <p class="tariffs__modal-description-text">Время полета: <span class="tariffs__modal-description-text-span">30 минут</span></p>
+                            <p class="tariffs__modal-description-text">Стоимость прогулки: <span class="tariffs__modal-description-text-span">от 4000 рублей с человека!</span></p>
+                            <div class="tariffs__modal-description-wrapper">
+                                <svg class="tariffs__modal-description-icon-person" width="45" height="46" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="22.5" cy="23" r="22.5" fill="#4CA1DA"/>
+                                    <path d="M34.077 29.3922H30.8462V26.1615C30.8462 25.9167 30.7489 25.6819 30.5758 25.5088C30.4027 25.3357 30.1679 25.2384 29.9231 25.2384C29.6783 25.2384 29.4435 25.3357 29.2704 25.5088C29.0973 25.6819 29 25.9167 29 26.1615V29.3922H25.7693C25.5245 29.3922 25.2897 29.4895 25.1166 29.6626C24.9434 29.8357 24.8462 30.0705 24.8462 30.3153C24.8462 30.5601 24.9434 30.7949 25.1166 30.968C25.2897 31.1412 25.5245 31.2384 25.7693 31.2384H29V34.4692C29 34.714 29.0973 34.9488 29.2704 35.1219C29.4435 35.295 29.6783 35.3922 29.9231 35.3922C30.1679 35.3922 30.4027 35.295 30.5758 35.1219C30.7489 34.9488 30.8462 34.714 30.8462 34.4692V31.2384H34.077C34.3218 31.2384 34.5566 31.1412 34.7297 30.968C34.9028 30.7949 35 30.5601 35 30.3153C35 30.0705 34.9028 29.8357 34.7297 29.6626C34.5566 29.4895 34.3218 29.3922 34.077 29.3922Z" fill="white"/>
+                                    <path d="M23 35.3923H13.7692C13.5244 35.3923 13.2896 35.295 13.1165 35.1219C12.9434 34.9488 12.8462 34.714 12.8462 34.4692C12.8493 31.7772 13.9201 29.1964 15.8237 27.2929C17.7272 25.3893 20.308 24.3185 23 24.3154C24.7841 24.3209 26.5103 23.6823 27.8613 22.5169C29.2123 21.3516 30.0973 19.7378 30.3537 17.9722C30.6101 16.2065 30.2206 14.4077 29.2569 12.9062C28.2931 11.4048 26.8198 10.3016 25.1078 9.79946C23.3958 9.29731 21.56 9.42992 19.938 10.1729C18.3159 10.9159 17.0165 12.2194 16.2785 13.8438C15.5406 15.4682 15.4137 17.3043 15.9212 19.0148C16.4287 20.7252 17.5365 22.1951 19.0409 23.1541C16.6943 23.976 14.6606 25.5058 13.2204 27.5325C11.7801 29.5592 11.0043 31.9829 11 34.4692C11 35.2036 11.2918 35.908 11.8111 36.4273C12.3304 36.9467 13.0348 37.2384 13.7692 37.2384H23C23.2448 37.2384 23.4796 37.1412 23.6527 36.9681C23.8258 36.795 23.9231 36.5602 23.9231 36.3154C23.9231 36.0705 23.8258 35.8357 23.6527 35.6626C23.4796 35.4895 23.2448 35.3923 23 35.3923ZM17.4615 16.9307C17.4615 15.8353 17.7864 14.7645 18.3949 13.8537C19.0035 12.9429 19.8685 12.2331 20.8805 11.8139C21.8925 11.3947 23.0061 11.285 24.0805 11.4987C25.1549 11.7124 26.1417 12.2399 26.9163 13.0145C27.6909 13.789 28.2183 14.7759 28.432 15.8502C28.6457 16.9246 28.5361 18.0382 28.1169 19.0502C27.6977 20.0622 26.9878 20.9272 26.077 21.5358C25.1662 22.1444 24.0954 22.4692 23 22.4692C21.5316 22.4677 20.1237 21.8837 19.0853 20.8454C18.047 19.8071 17.463 18.3992 17.4615 16.9307Z" fill="white"/>
+                                </svg>
+                                <p class="tariffs__modal-description-wrapper-text">самолет вмещает <span class="tariffs__modal-description-text-span">до 3-х человек,</span><br> 
+                                        для полета оплачивается цена за троих: 12000 рублей</p>
+                            </div>
+                        </div>
+                        <div class="tariffs__modal-instructions">
+                            <p class="tariffs__modal-instructions-title">Как полететь?</p>
+                            <div class="tariffs__modal-instructions-cards">
+                                <div class="tariffs__modal-instructions-card">
+                                    <p class="tariffs__modal-instructions-card-title">#1</p>
+                                    <p class="tariffs__modal-instructions-card-text">Бронируете и оплачиваете полет на нашем сайте</p>
+                                    <button class="tariffs__modal-instructions-card-btn" data-modal-close data-modal-button="modal-1">Забронировать</button>
+                                </div>
+                                <div class="tariffs__modal-instructions-card">
+                                    <p class="tariffs__modal-instructions-card-title">#2</p>
+                                        <p class="tariffs__modal-instructions-card-text">В назначенный день приезжаете 
+                                                на аэродром «Логиново» за 
+                                                15 минут до начала полета для проведения инструктажа и 
+                                                обзорной экскурсии
+                                        </p>
+                                </div>
+                                <div class="tariffs__modal-instructions-card">
+                                    <p class="tariffs__modal-instructions-card-title">#3</p>
+                                    <p class="tariffs__modal-instructions-card-text">Занимаете места в самолете и 
+                                                наслаждаетесь авиапрогулкой
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="tariffs__modal-instructions-note">
+                                <span class="tariffs__modal-description-text-span">Не беспокойтесь о безопасности!</span> Все самолеты проходят предполетный осмотр перед каждой прогулкой, а за штурвалом вас ждут опытные пилоты с огромным опытом.
+                            </p>
+                        </div>
+                        <button class="tariffs__modal-pay-btn">оплатить</button>
+                    </div>
+                </article>
+            </div>
+
+
+            <!-- модалка 45 -->
+            <div class="modals-fade hidden" id="modal-45" data-modal>
+                <article class="modal__window tariffs__modal modal-20">
+                    <div class="tariffs__modal-left">
+                        <img src="./assets/img/map-45.jpg" alt="маршрут-45">
+                        <div class="tariffs__modal-navigation">
+                            <div class="tariffs__modal-resize">
+                                <svg class="tariffs__modal-plus" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="8" width="2" height="14" transform="rotate(-90 0 8)" fill="#000E2A"/>
+                                    <rect y="8" width="2" height="14" transform="rotate(-90 0 8)" fill="#000E2A"/>
+                                    <rect x="6" width="2" height="14" fill="#000E2A"/>
+                                    <rect x="6" width="2" height="14" fill="#000E2A"/>
+                                </svg>
+                                <svg class="tariffs__modal-minus" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="2" width="2" height="14" transform="rotate(-90 0 2)" fill="#000E2A"/>
+                                    <rect y="2" width="2" height="14" transform="rotate(-90 0 2)" fill="#000E2A"/>
+                                </svg>   
+                            </div>
+                            <div class="tariffs__modal-arrowbox">
+                                <svg class="tariffs__modal-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.5 0L0 8.5L7 11L9 18L17.5 0Z" fill="#000E2A"/>
+                                </svg> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tariffs__modal-right">
+                        <svg class="tariffs__modal-right-close-btn" data-modal-close width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="25" cy="25" r="25" fill="#000E2A"/>
+                                <rect x="13.6863" y="15.1005" width="3" height="30" rx="1.5" transform="rotate(-45 13.6863 15.1005)" fill="white"/>
+                                <rect x="15.8076" y="37.0209" width="3" height="30" rx="1.5" transform="rotate(-135 15.8076 37.0209)" fill="white"/>
+                        </svg>
+                        <div class="tariffs__modal-description">
+                            <h3 class="tariffs__modal-description-title">Взлет-посадка</h3>
+                            <p class="tariffs__modal-description-text">Время полета: <span class="tariffs__modal-description-text-span">45 минут</span></p>
+                            <p class="tariffs__modal-description-text">Стоимость прогулки: <span class="tariffs__modal-description-text-span">от 5300 рублей с человека!</span></p>
+                            <div class="tariffs__modal-description-wrapper">
+                                <svg class="tariffs__modal-description-icon-person" width="45" height="46" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="22.5" cy="23" r="22.5" fill="#4CA1DA"/>
+                                    <path d="M34.077 29.3922H30.8462V26.1615C30.8462 25.9167 30.7489 25.6819 30.5758 25.5088C30.4027 25.3357 30.1679 25.2384 29.9231 25.2384C29.6783 25.2384 29.4435 25.3357 29.2704 25.5088C29.0973 25.6819 29 25.9167 29 26.1615V29.3922H25.7693C25.5245 29.3922 25.2897 29.4895 25.1166 29.6626C24.9434 29.8357 24.8462 30.0705 24.8462 30.3153C24.8462 30.5601 24.9434 30.7949 25.1166 30.968C25.2897 31.1412 25.5245 31.2384 25.7693 31.2384H29V34.4692C29 34.714 29.0973 34.9488 29.2704 35.1219C29.4435 35.295 29.6783 35.3922 29.9231 35.3922C30.1679 35.3922 30.4027 35.295 30.5758 35.1219C30.7489 34.9488 30.8462 34.714 30.8462 34.4692V31.2384H34.077C34.3218 31.2384 34.5566 31.1412 34.7297 30.968C34.9028 30.7949 35 30.5601 35 30.3153C35 30.0705 34.9028 29.8357 34.7297 29.6626C34.5566 29.4895 34.3218 29.3922 34.077 29.3922Z" fill="white"/>
+                                    <path d="M23 35.3923H13.7692C13.5244 35.3923 13.2896 35.295 13.1165 35.1219C12.9434 34.9488 12.8462 34.714 12.8462 34.4692C12.8493 31.7772 13.9201 29.1964 15.8237 27.2929C17.7272 25.3893 20.308 24.3185 23 24.3154C24.7841 24.3209 26.5103 23.6823 27.8613 22.5169C29.2123 21.3516 30.0973 19.7378 30.3537 17.9722C30.6101 16.2065 30.2206 14.4077 29.2569 12.9062C28.2931 11.4048 26.8198 10.3016 25.1078 9.79946C23.3958 9.29731 21.56 9.42992 19.938 10.1729C18.3159 10.9159 17.0165 12.2194 16.2785 13.8438C15.5406 15.4682 15.4137 17.3043 15.9212 19.0148C16.4287 20.7252 17.5365 22.1951 19.0409 23.1541C16.6943 23.976 14.6606 25.5058 13.2204 27.5325C11.7801 29.5592 11.0043 31.9829 11 34.4692C11 35.2036 11.2918 35.908 11.8111 36.4273C12.3304 36.9467 13.0348 37.2384 13.7692 37.2384H23C23.2448 37.2384 23.4796 37.1412 23.6527 36.9681C23.8258 36.795 23.9231 36.5602 23.9231 36.3154C23.9231 36.0705 23.8258 35.8357 23.6527 35.6626C23.4796 35.4895 23.2448 35.3923 23 35.3923ZM17.4615 16.9307C17.4615 15.8353 17.7864 14.7645 18.3949 13.8537C19.0035 12.9429 19.8685 12.2331 20.8805 11.8139C21.8925 11.3947 23.0061 11.285 24.0805 11.4987C25.1549 11.7124 26.1417 12.2399 26.9163 13.0145C27.6909 13.789 28.2183 14.7759 28.432 15.8502C28.6457 16.9246 28.5361 18.0382 28.1169 19.0502C27.6977 20.0622 26.9878 20.9272 26.077 21.5358C25.1662 22.1444 24.0954 22.4692 23 22.4692C21.5316 22.4677 20.1237 21.8837 19.0853 20.8454C18.047 19.8071 17.463 18.3992 17.4615 16.9307Z" fill="white"/>
+                                </svg>
+                                <p class="tariffs__modal-description-wrapper-text">самолет вмещает <span class="tariffs__modal-description-text-span">до 3-х человек,</span><br> 
+                                        для полета оплачивается цена за троих: 15900 рублей</p>
+                            </div>
+                        </div>
+                        <div class="tariffs__modal-instructions">
+                            <p class="tariffs__modal-instructions-title">Как полететь?</p>
+                            <div class="tariffs__modal-instructions-cards">
+                                <div class="tariffs__modal-instructions-card">
+                                    <p class="tariffs__modal-instructions-card-title">#1</p>
+                                    <p class="tariffs__modal-instructions-card-text">Бронируете и оплачиваете полет на нашем сайте</p>
+                                    <button class="tariffs__modal-instructions-card-btn" data-modal-close data-modal-button="modal-1">Забронировать</button>
+                                </div>
+                                <div class="tariffs__modal-instructions-card">
+                                    <p class="tariffs__modal-instructions-card-title">#2</p>
+                                        <p class="tariffs__modal-instructions-card-text">В назначенный день приезжаете 
+                                                на аэродром «Логиново» за 
+                                                15 минут до начала полета для проведения инструктажа и 
+                                                обзорной экскурсии
+                                        </p>
+                                </div>
+                                <div class="tariffs__modal-instructions-card">
+                                    <p class="tariffs__modal-instructions-card-title">#3</p>
+                                    <p class="tariffs__modal-instructions-card-text">Занимаете места в самолете и 
+                                                наслаждаетесь авиапрогулкой
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="tariffs__modal-instructions-note">
+                                <span class="tariffs__modal-description-text-span">Не беспокойтесь о безопасности!</span> Все самолеты проходят предполетный осмотр перед каждой прогулкой, а за штурвалом вас ждут опытные пилоты с огромным опытом.
+                            </p>
+                        </div>
+                        <button class="tariffs__modal-pay-btn">оплатить</button>
+                    </div>
+                </article>
+            </div>
+
+
+            <!-- модалка 60 -->
+            <div class="modals-fade hidden" id="modal-60" data-modal>
+                <article class="modal__window tariffs__modal modal-20">
+                    <div class="tariffs__modal-left">
+                        <img src="./assets/img/map-60.jpg" alt="маршрут-60">
+                        <div class="tariffs__modal-navigation">
+                            <div class="tariffs__modal-resize">
+                                <svg class="tariffs__modal-plus" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="8" width="2" height="14" transform="rotate(-90 0 8)" fill="#000E2A"/>
+                                    <rect y="8" width="2" height="14" transform="rotate(-90 0 8)" fill="#000E2A"/>
+                                    <rect x="6" width="2" height="14" fill="#000E2A"/>
+                                    <rect x="6" width="2" height="14" fill="#000E2A"/>
+                                </svg>
+                                <svg class="tariffs__modal-minus" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="2" width="2" height="14" transform="rotate(-90 0 2)" fill="#000E2A"/>
+                                    <rect y="2" width="2" height="14" transform="rotate(-90 0 2)" fill="#000E2A"/>
+                                </svg>   
+                            </div>
+                            <div class="tariffs__modal-arrowbox">
+                                <svg class="tariffs__modal-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.5 0L0 8.5L7 11L9 18L17.5 0Z" fill="#000E2A"/>
+                                </svg> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tariffs__modal-right">
+                        <svg class="tariffs__modal-right-close-btn" data-modal-close width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="25" cy="25" r="25" fill="#000E2A"/>
+                                <rect x="13.6863" y="15.1005" width="3" height="30" rx="1.5" transform="rotate(-45 13.6863 15.1005)" fill="white"/>
+                                <rect x="15.8076" y="37.0209" width="3" height="30" rx="1.5" transform="rotate(-135 15.8076 37.0209)" fill="white"/>
+                        </svg>
+                        <div class="tariffs__modal-description">
+                            <h3 class="tariffs__modal-description-title">Взлет-посадка</h3>
+                            <p class="tariffs__modal-description-text">Время полета: <span class="tariffs__modal-description-text-span">60 минут</span></p>
+                            <p class="tariffs__modal-description-text">Стоимость прогулки: <span class="tariffs__modal-description-text-span">от 6000 рублей с человека!</span></p>
+                            <div class="tariffs__modal-description-wrapper">
+                                <svg class="tariffs__modal-description-icon-person" width="45" height="46" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="22.5" cy="23" r="22.5" fill="#4CA1DA"/>
+                                    <path d="M34.077 29.3922H30.8462V26.1615C30.8462 25.9167 30.7489 25.6819 30.5758 25.5088C30.4027 25.3357 30.1679 25.2384 29.9231 25.2384C29.6783 25.2384 29.4435 25.3357 29.2704 25.5088C29.0973 25.6819 29 25.9167 29 26.1615V29.3922H25.7693C25.5245 29.3922 25.2897 29.4895 25.1166 29.6626C24.9434 29.8357 24.8462 30.0705 24.8462 30.3153C24.8462 30.5601 24.9434 30.7949 25.1166 30.968C25.2897 31.1412 25.5245 31.2384 25.7693 31.2384H29V34.4692C29 34.714 29.0973 34.9488 29.2704 35.1219C29.4435 35.295 29.6783 35.3922 29.9231 35.3922C30.1679 35.3922 30.4027 35.295 30.5758 35.1219C30.7489 34.9488 30.8462 34.714 30.8462 34.4692V31.2384H34.077C34.3218 31.2384 34.5566 31.1412 34.7297 30.968C34.9028 30.7949 35 30.5601 35 30.3153C35 30.0705 34.9028 29.8357 34.7297 29.6626C34.5566 29.4895 34.3218 29.3922 34.077 29.3922Z" fill="white"/>
+                                    <path d="M23 35.3923H13.7692C13.5244 35.3923 13.2896 35.295 13.1165 35.1219C12.9434 34.9488 12.8462 34.714 12.8462 34.4692C12.8493 31.7772 13.9201 29.1964 15.8237 27.2929C17.7272 25.3893 20.308 24.3185 23 24.3154C24.7841 24.3209 26.5103 23.6823 27.8613 22.5169C29.2123 21.3516 30.0973 19.7378 30.3537 17.9722C30.6101 16.2065 30.2206 14.4077 29.2569 12.9062C28.2931 11.4048 26.8198 10.3016 25.1078 9.79946C23.3958 9.29731 21.56 9.42992 19.938 10.1729C18.3159 10.9159 17.0165 12.2194 16.2785 13.8438C15.5406 15.4682 15.4137 17.3043 15.9212 19.0148C16.4287 20.7252 17.5365 22.1951 19.0409 23.1541C16.6943 23.976 14.6606 25.5058 13.2204 27.5325C11.7801 29.5592 11.0043 31.9829 11 34.4692C11 35.2036 11.2918 35.908 11.8111 36.4273C12.3304 36.9467 13.0348 37.2384 13.7692 37.2384H23C23.2448 37.2384 23.4796 37.1412 23.6527 36.9681C23.8258 36.795 23.9231 36.5602 23.9231 36.3154C23.9231 36.0705 23.8258 35.8357 23.6527 35.6626C23.4796 35.4895 23.2448 35.3923 23 35.3923ZM17.4615 16.9307C17.4615 15.8353 17.7864 14.7645 18.3949 13.8537C19.0035 12.9429 19.8685 12.2331 20.8805 11.8139C21.8925 11.3947 23.0061 11.285 24.0805 11.4987C25.1549 11.7124 26.1417 12.2399 26.9163 13.0145C27.6909 13.789 28.2183 14.7759 28.432 15.8502C28.6457 16.9246 28.5361 18.0382 28.1169 19.0502C27.6977 20.0622 26.9878 20.9272 26.077 21.5358C25.1662 22.1444 24.0954 22.4692 23 22.4692C21.5316 22.4677 20.1237 21.8837 19.0853 20.8454C18.047 19.8071 17.463 18.3992 17.4615 16.9307Z" fill="white"/>
+                                </svg>
+                                <p class="tariffs__modal-description-wrapper-text">самолет вмещает <span class="tariffs__modal-description-text-span">до 3-х человек,</span><br> 
+                                        для полета оплачивается цена за троих: 18000 рублей</p>
+                            </div>
+                        </div>
+                        <div class="tariffs__modal-instructions">
+                            <p class="tariffs__modal-instructions-title">Как полететь?</p>
+                            <div class="tariffs__modal-instructions-cards">
+                                <div class="tariffs__modal-instructions-card">
+                                    <p class="tariffs__modal-instructions-card-title">#1</p>
+                                    <p class="tariffs__modal-instructions-card-text">Бронируете и оплачиваете полет на нашем сайте</p>
+                                    <button class="tariffs__modal-instructions-card-btn" data-modal-close data-modal-button="modal-1">Забронировать</button>
+                                </div>
+                                <div class="tariffs__modal-instructions-card">
+                                    <p class="tariffs__modal-instructions-card-title">#2</p>
+                                        <p class="tariffs__modal-instructions-card-text">В назначенный день приезжаете 
+                                                на аэродром «Логиново» за 
+                                                15 минут до начала полета для проведения инструктажа и 
+                                                обзорной экскурсии
+                                        </p>
+                                </div>
+                                <div class="tariffs__modal-instructions-card">
+                                    <p class="tariffs__modal-instructions-card-title">#3</p>
+                                    <p class="tariffs__modal-instructions-card-text">Занимаете места в самолете и 
+                                                наслаждаетесь авиапрогулкой
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="tariffs__modal-instructions-note">
+                                <span class="tariffs__modal-description-text-span">Не беспокойтесь о безопасности!</span> Все самолеты проходят предполетный осмотр перед каждой прогулкой, а за штурвалом вас ждут опытные пилоты с огромным опытом.
+                            </p>
+                        </div>
+                        <button class="tariffs__modal-pay-btn">оплатить</button>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+
+        <section class="payments section" id="payments">
+            <div class="container">
+                <div class="payments__inner">
+                    <h2 class="payments__title">Бронирование и оплата</h2>
+                    <div class="payments__wrapper">
+                        <div class="payments__card">
+                            <img class="payments__card-icon-phone" src="./assets/svg/payment-phone.svg" alt="иконка телефона">
+                            <p class="payments__card-text">Чтобы забронировать прогулочный 
+                                полет свяжитесь с нами или оставьте <a class="payments__card-link" href="#">заявку на обратный звонок.</a>
+                            </p>
+                        </div>
+                        <div class="payments__card">
+                            <img class="payments__card-icon-pay" src="./assets/svg/payment-pay.svg" alt="иконка оплаты">
+                            <p class="payments__card-text"><a class="payments__card-link" href="#">Оплата прогулочного полета</a> производится на сайте на странице выбранного маршрута.
+                            </p>
+                        </div>
+                        <div class="payments__card">
+                            <img class="payments__card-icon-certificate" src="./assets/svg/payment-certificate.svg" alt="иконка сертификата">
+                            <p class="payments__card-text"><a class="payments__card-link" href="#">Подарочные сертификаты</a> на впечатления.
+                                Дарите электронные сертификаты прогулочных полетов удаленно.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="offers section" id="offers">
+            <div class="container">
+                <div class="offers__inner">
+                    <div class="offers__left">
+                        <h2 class="offers__left-title">Особые предложения:</h2>
+                        <img class="offers__left-image" src="./assets/img/offers-1.png" loading="lazy" alt="картинка аккардеона">
+                        <img class="offers__left-image" src="./assets/img/offers-2.png" loading="lazy" alt="картинка аккардеона">
+                        <img class="offers__left-image" src="./assets/img/offers-3.png" loading="lazy" alt="картинка аккардеона">
+                        <img class="offers__left-image" src="./assets/img/offers-4.png" loading="lazy" alt="картинка аккардеона">
+                    </div>
+
+                    <ul class="accordion offers__accordion">
+                        <li class="accordion__item">
+                            <div class="accordion__question">
+                                <div class="accordion__svg-box">
+                                    <svg class="accordion__svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="25" cy="25" r="25" fill="#000E2A"/>
+                                        <rect x="25" y="10" width="1" height="30" rx="0.5" fill="white"/>
+                                        <rect x="10" y="26" width="1" height="30" rx="0.5" transform="rotate(-90 10 26)" fill="white"/>
+                                    </svg>
+                                </div>
+                                <h3 class="accordion__question-title">Подарочные сертификаты на любой вкус: впечатления – лучший подарок.</h3>
+                            </div>
+                            <div class="accordion__body">
+                                <acticle class="accordion__article">
+                                    <p class="accordion__article-text"><span class="accordion__article-text-span">Дарите впечатления!</span> Исполняйте мечты, награждайте приятными эмоциями, создавайте приключения! 
+                                        Подарочный сертификат на прогулочный полет станет впечатляющим подарком для кого угодно. 
+                                        Оригинально, солидно, неожиданно, экстремально, креативно – всё это подарочный сертификат на прогулочный полет от компании АвиаТех. 
+                                        Стоимость сертификата равняется стоимости выбранного маршрута. По своему желанию обладатель сертификата может изменить маршрут. 
+                                        Если стоимость выбранного маршрута превышает сумму сертификата, необходимо будет доплатить разницу. 
+                                        Сертификат действителен в течение одного года с момента покупки.
+                                    </p> 
+                                    <h4 class="accordion__article-title">Правила использования подарочного сертификата на прогулочный полет</h4>
+                                    <ol class="accordion__article-list">
+                                        <li class="accordion__article-list-item">
+                                            К покупке доступны сертификаты на сумму: 9600 рублей, 12000 рублей, 15900 рублей, 18000 рублей.
+                                        </li>
+                                        <li class="accordion__article-list-item">
+                                            При использовании сертификата обладатель вправе выбрать маршрут прогулки. 
+                                                    В случае если стоимость прогулки по выбранному маршруту превышает номинал сертификата, необходимо доплатить недостающую сумму.
+                                        </li>
+                                        <li class="accordion__article-list-item">
+                                            Срок действия сертификата: 6 месяцев с даты покупки.
+                                        </li>
+                                        <li class="accordion__article-list-item">
+                                            Для использования сертификата необходимо забронировать свободное место в графике 
+                                                    прогулочных полетов через оператора горячей линии.
+                                        </li>
+                                        <li class="accordion__article-list-item">
+                                            В назначенный день необходимо приехать на аэродром «Логиново» за 15 минут 
+                                                    до начала прогулочного полета для прохождения предполетного инструктажа
+                                        </li>
+                                    </ol>
+                                    <h4 class="accordion__article-title">Покупка и доставка (сертификата)</h4>
+                                    <ol class="accordion__article-list">
+                                        <li class="accordion__article-list-item">
+                                            Выбрать и купить подарочный сертификат вы можете на сайте в разделе «Оплата»
+                                        </li>
+                                        <li class="accordion__article-list-item">
+                                            При использовании сертификата обладатель вправе выбрать маршрут прогулки. 
+                                                    К покупке доступны подарочные сертификаты номиналом: 9600 рублей, 12000 рублей, 15900 рублей, 18000 рублей.
+                                        </li>
+                                        <li class="accordion__article-list-item">
+                                            При покупке вы можете выбрать между электронным подарочным сертификатом и подарочным сертификатом в фирменной упаковке.
+                                        </li>
+                                    </ol>
+                                </acticle>  
+                                <a class="accordion__article-btn">купить сертификат</a>
+                                </div>
+                            </li>
+                            <li class="accordion__item">
+                                <div class="accordion__question">
+                                    <div class="accordion__svg-box">
+                                        <svg class="accordion__svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="25" cy="25" r="25" fill="#000E2A"/>
+                                            <rect x="25" y="10" width="1" height="30" rx="0.5" fill="white"/>
+                                            <rect x="10" y="26" width="1" height="30" rx="0.5" transform="rotate(-90 10 26)" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="accordion__question-title">Профессиональные фото и видео от нашего фотографа-видеографа, 
+                                        который запечатлеет лучшие моменты!
+                                    </h3>
+                                
+                                
+                            </div>
+                            <div class="accordion__body">
+                                <article class="accordion__article">
+                                    <p class="accordion__article-text">Торжество по открытию тайны пола будущего ребенка еще никогда не было таким захватывающим. 
+                                        Разделите с близкими этот волнующий момент на территории аэродрома. 
+                                        Что может сделать этот незабываемый день еще торжественнее? 
+                                        Дымовая машина, установленная в самолете, в момент пролета над собравшимися начинает выпускать за самолетом след цветного дыма: 
+                                        голубого или розового. 
+                                        Дым имеет яркие цвета, поэтому отлично виден даже на безоблачном небе.
+                                    </p>
+                                </article>
+                            </div>
+                        </li>
+                        <li class="accordion__item">
+                            <div class="accordion__question">
+                                <div class="accordion__svg-box">
+                                    <svg class="accordion__svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="25" cy="25" r="25" fill="#000E2A"/>
+                                        <rect x="25" y="10" width="1" height="30" rx="0.5" fill="white"/>
+                                        <rect x="10" y="26" width="1" height="30" rx="0.5" transform="rotate(-90 10 26)" fill="white"/>
+                                    </svg>
+                                </div>
+                                <h3 class="accordion__question-title">
+                                    Гендер-пати с использование дымовой машины, установленной в самолете: сделайте важное событие еще и эффектным!
+                                </h3>
+                            </div>
+                            <div class="accordion__body">
+                                <article class="accordion__article">
+                                    <p class="accordion__article-text">Торжество по открытию тайны пола будущего ребенка еще никогда не было таким захватывающим. 
+                                        Разделите с близкими этот волнующий момент на территории аэродрома. 
+                                        Что может сделать этот незабываемый день еще торжественнее? 
+                                        Дымовая машина, установленная в самолете, в момент пролета над собравшимися начинает выпускать за самолетом след цветного дыма: 
+                                        голубого или розового. 
+                                        Дым имеет яркие цвета, поэтому отлично виден даже на безоблачном небе.
+                                    </p>
+                                </article>
+                            </div>
+                        </li>
+                        <li class="accordion__item">
+                            <div class="accordion__question">
+                                <div class="accordion__svg-box">
+                                    <svg class="accordion__svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="25" cy="25" r="25" fill="#000E2A"/>
+                                        <rect x="25" y="10" width="1" height="30" rx="0.5" fill="white"/>
+                                        <rect x="10" y="26" width="1" height="30" rx="0.5" transform="rotate(-90 10 26)" fill="white"/>
+                                    </svg>
+                                </div>
+                                <h3 class="accordion__question-title">Установка баннеров с вашим текстом у аэродрома: скажите вашей половинке, что давно хотели!
+                                </h3>
+                            </div>
+                            <div class="accordion__body">
+                                <article class="accordion__article">
+                                    <p class="accordion__article-text">Торжество по открытию тайны пола будущего ребенка еще никогда не было таким захватывающим. 
+                                        Разделите с близкими этот волнующий момент на территории аэродрома. 
+                                        Что может сделать этот незабываемый день еще торжественнее? 
+                                        Дымовая машина, установленная в самолете, в момент пролета над собравшимися начинает выпускать за самолетом след цветного дыма: 
+                                        голубого или розового. 
+                                        Дым имеет яркие цвета, поэтому отлично виден даже на безоблачном небе.
+                                    </p>
+                                </article>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="gallery section" id="gallery">
+            <div class="container">
+                <div class="gallery__inner">
+                    <h2 class="gallery__title">галерея</h2>
+                    <div class="gallery__box">
+                        <img src="./assets/img/g1-1.png" loading="lazy" data-fancybox="gallery" alt="">
+                        <img src="./assets/img/g1-2.jpg" loading="lazy" data-fancybox="gallery" alt="">
+                        <img src="./assets/img/g1-3.jpg" loading="lazy" data-fancybox="gallery" alt="">
+                        <img src="./assets/img/g2-1.jpg" loading="lazy" data-fancybox="gallery" alt="">
+                        <img src="./assets/img/g2-2.jpg" loading="lazy" data-fancybox="gallery" alt="">
+                        <img src="./assets/img/g2-3.jpg" loading="lazy" data-fancybox="gallery" alt="">
+                        <img src="./assets/img/g3-1.jpg" loading="lazy" data-fancybox="gallery" alt="">
+                        <img src="./assets/img/g3-2.jpg" loading="lazy" data-fancybox="gallery" alt="">
+                        <img src="./assets/img/g3-3.jpg" loading="lazy" data-fancybox="gallery" alt="">
+                        <img src="./assets/img/g4-1.png" loading="lazy" data-fancybox="gallery" alt="">
+                        <img src="./assets/img/g4-2.jpg" loading="lazy" data-fancybox="gallery" alt="">
+                        <img src="./assets/img/g4-3.jpg" loading="lazy" data-fancybox="gallery" alt="">
+                        <img src="./assets/img/g5-1.jpg" loading="lazy" data-fancybox="gallery" alt="">
+                        <img src="./assets/img/g5-2.jpg" loading="lazy" data-fancybox="gallery" alt="">
+                        <img src="./assets/img/g5-3.jpg" loading="lazy" data-fancybox="gallery" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="why section" id="why">
+            <div class="container">
+                <div class="why__inner">
+                    <h2 class="why__title">Почему мы? </h2>
+                    <div class="why__wrapper">
+                        <article class="why__card">
+                            <h4 class="why__card-title">Единственные</h4>
+                            <p class="why__card-text">Мы единственная частная авиакомпания Свердловской области, 
+                                предоставляющая услуги по организации прогулочных полетов
+                            </p>
+                        </article>
+                        <article class="why__card">
+                            <h4 class="why__card-title">команда</h4>
+                            <p class="why__card-text">В нашей команде только профессиональные пилоты, 
+                                имеющие многолетний стаж и опыт тысячи часов налета в самых разных точках России.
+                            </p>
+                        </article>
+                        <article class="why__card">
+                            <h4 class="why__card-title">Флот</h4>
+                            <p class="why__card-text">Флот авиакомпании состоит только из своих самолетов, 
+                                регулярно проходящих квалифицированное техническое обслуживание.
+                            </p>
+                        </article>
+                    </div>
+                    <button class="why__btn btn__book-flight" data-modal-button="modal-1">забронировать полет</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="blog section" id="blog">
+            <div class="container">
+                <div class="blog__inner">
+                    <h2 class="blog__title">БЛОГ, Акции, предложения</h2>
+                    <div class="blog__wrapper">
+                        <article class="blog__card">
+                            <a href="" class="blog__card-link">
+                                <img class="blog__card-image" src="./assets/img/blog1.jpg" loading="lazy" alt="Картинка статьи">
+                            </a>
+                            <h4 class="blog__card-title">Воздушный бестселлер - сверхнадежная Cessna 172</h4>
+                            <p class="blog__card-text">В истории авиации есть самолеты, не блистающие высокими показателями скорости, высоты и дальности полёта, грузоподъемностью или ....
+                            </p>
+                            <a href="#" class="blog__card-more">читать далее</a>
+                        </article>
+                        <article class="blog__card">
+                            <a href="" class="blog__card-link">
+                                <img class="blog__card-image" src="./assets/img/blog2.jpg" loading="lazy" alt="Картинка статьи">
+                            </a>
+                            <h4 class="blog__card-title">Легкомоторные самолеты малой авиации разных стран</h4>
+                            <p class="blog__card-text">Маленькие машины достаточно надежны, так как состоят из малого количества деталей. Полет на таком самолете полностью безопасен ....
+                            </p>
+                            <a href="#" class="blog__card-more">читать далее</a>
+                        </article>
+                        <article class="blog__card">
+                            <a href="" class="blog__card-link">
+                                <img class="blog__card-image" src="./assets/img/blog3.jpg" loading="lazy" alt="Картинка статьи">
+                            </a>
+                            <span class="blog__card-span">Акция</span>
+                            <h4 class="blog__card-title">Скидка к 23 февраля</h4>
+                            <p class="blog__card-text">Подарите своему мужчине не детские радости
+                            </p>
+                            <a href="#" class="blog__card-more">читать далее</a>
+                        </article>
+                    </div>
+                    <button class="blog__btn">Читать все статьи</button>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="text__line">
+            <div class="text__line-border">
+                <ul class="text__line-menu">
+                    <li class="text__line-item">
+                        Екатеринбург, каким его видели только вы!
+                    </li>
+                    <li class="text__line-item">
+                        Гендер-пати. Разделите с близкими радость этого волнительного момента
+                    </li>
+                    <li class="text__line-item">
+                        Специально разработанные маршруты с лучшими видами
+                    </li>
+                    <li class="text__line-item">
+                        Незабываемое свидание на высшем уровне
+                    </li>
+                </ul>
+            </div>
+        </div>   
+    </main>
+
+
+    <footer class="footer section" id="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__wrapper">
+                    <h2 class="footer__wrapper-title">Контакты</h2>
+                    <div class="footer__wrapper-right">
+                        <span class="footer__wrapper-span">Екатеринбург, каким его видели только вы!</span>
+                        <a class="footer__wrapper-logo-link" href="#">
+                            <svg class="footer__wrapper-logo-svg" width="73" height="46" viewBox="0 0 73 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_506_158)">
+                                <path d="M34.9941 46L31.5521 42.3537V23.9817C31.6955 23.9817 1.29077 6.17073 0 0L34.9941 22.439V46Z" fill="#000E2A"/>
+                                <path d="M28.6837 38.5671L26.1022 35.7622V26.5061C26.1022 26.5061 10.8998 19.7744 7.7446 12.6219L28.6837 25.3841V38.5671Z" fill="#000E2A"/>
+                                <path d="M38.0059 46L41.4479 42.3537V23.9817C41.4479 23.9817 71.8527 6.31098 73.1434 0L38.0059 22.439V46Z" fill="#000E2A"/>
+                                <path d="M44.3163 38.5671L46.8978 35.7622V26.5061C46.8978 26.5061 62.1002 19.7744 65.2554 12.6219L44.3163 25.3841V38.5671Z" fill="#000E2A"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_506_158">
+                                <rect width="73" height="46" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>  
+                </div>
+                <hr class="footer__hr">
+                <div class="footer__wrapper-bottom">
+                    <div class="footer__wrapper-adress">
+                        <h4 class="footer__wrapper-adress-title">ООО «АвиаТЕХ»</h4>
+                        <p class="footer__wrapper-adress-text">620066, Свердловская обл., г. Екатеринбург, ул. Мамина-Сибиряка 101, оф. 2.27</p>
+                        <p class="footer__wrapper-adress-text">ИНН 6670508601 | КПП 667001001</p>
+                        <p class="footer__wrapper-adress-text">ОГРН 1226600026124</p>
+                    </div>
+                    <div class="footer__box">
+                        <div class="footer__wrapper-phone">
+                            <span class="footer__wrapper-subtitle">Телефон:</span>
+                            <a class="footer__wrapper-phone-link" href="tel:+7343000000">+7 (343) 000-00-00 </a>
+                        </div>
+                        <div class="footer__wrapper-email">
+                            <span class="footer__wrapper-subtitle">E-mail:</span>
+                            <a href="mailto:mss@airtechs.ru" class="footer__wrapper-email-link">mss@airtechs.ru</a>
+                        </div>
+                        <div class="footer__wrapper-messengers">
+                            <span class="footer__wrapper-subtitle">Мессенджеры:</span>
+                            <ul class="footer__wrapper-messangers-menu">
+                                <li class="footer__wrapper-messangers-item">
+                                    <a href="#" class="footer__wrapper-messangers-link-whatsup">
+                                        <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.8125 3.59375C15.8906 1.625 13.2656 0.5 10.4531 0.5C4.73438 0.5 0.046875 5.1875 0.046875 10.9062C0.046875 12.7812 0.5625 14.5625 1.45312 16.1094L0 21.5L5.48438 20.0938C7.03125 20.8906 8.71875 21.3594 10.4531 21.3594C16.2188 21.3594 21 16.6719 21 10.9531C21 8.14062 19.7812 5.5625 17.8125 3.59375ZM10.4531 19.5781C8.90625 19.5781 7.40625 19.1562 6.04688 18.3594L5.76562 18.1719L2.48438 19.0625L3.375 15.875L3.14062 15.5469C2.29688 14.1406 1.82812 12.5469 1.82812 10.9062C1.82812 6.17188 5.71875 2.28125 10.5 2.28125C12.7969 2.28125 14.9531 3.17188 16.5938 4.8125C18.2344 6.45312 19.2188 8.60938 19.2188 10.9531C19.2188 15.6875 15.2344 19.5781 10.4531 19.5781ZM15.2344 13.1094C14.9531 12.9688 13.6875 12.3594 13.4531 12.2656C13.2188 12.1719 13.0312 12.125 12.8438 12.4062C12.7031 12.6406 12.1875 13.25 12.0469 13.4375C11.8594 13.5781 11.7188 13.625 11.4844 13.4844C9.9375 12.7344 8.95312 12.125 7.92188 10.3906C7.64062 9.92188 8.20312 9.96875 8.67188 8.98438C8.76562 8.79688 8.71875 8.65625 8.67188 8.51562C8.625 8.375 8.0625 7.10938 7.875 6.59375C7.64062 6.07812 7.45312 6.125 7.26562 6.125C7.125 6.125 6.9375 6.125 6.79688 6.125C6.60938 6.125 6.32812 6.17188 6.09375 6.45312C5.85938 6.73438 5.20312 7.34375 5.20312 8.60938C5.20312 9.92188 6.09375 11.1406 6.23438 11.3281C6.375 11.4688 8.0625 14.0938 10.6875 15.2188C12.3281 15.9688 12.9844 16.0156 13.8281 15.875C14.2969 15.8281 15.3281 15.2656 15.5625 14.6562C15.7969 14.0469 15.7969 13.5312 15.7031 13.4375C15.6562 13.2969 15.4688 13.25 15.2344 13.1094Z" fill="#000E2A"/>
+                                        </svg> 
+                                    </a>
+                                </li>
+                                <li class="footer__wrapper-messangers-item">
+                                    <a href="#" class="footer__wrapper-messangers-link-telegram">
+                                        <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21.9062 2.64062C22.1875 1.32812 21.4375 0.8125 20.5938 1.14062L1.9375 8.3125C0.671875 8.82812 0.71875 9.53125 1.75 9.85938L6.48438 11.3125L17.5469 4.375C18.0625 4 18.5781 4.23438 18.1562 4.5625L9.20312 12.625L8.875 17.5469C9.39062 17.5469 9.57812 17.3594 9.85938 17.0781L12.1562 14.8281L16.9844 18.3906C17.875 18.9062 18.5312 18.625 18.7656 17.5938L21.9062 2.64062Z" fill="#000E2A"/>
+                                        </svg>   
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__wrapper-policy">
+                        <a class="footer__wrapper-policy-text" href="#">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__rights">
+                <span class="footer__rights-text">© 2022 ООО «АвиаТех» |</span> Все права защищены
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/fancybox/fancybox.umd.js"></script>
+    <script src="./assets/js/accordion.js"></script>
+    <script src="./assets/js/modal.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/burger.js"></script>
+</body>
+</html>

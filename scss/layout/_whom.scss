@@ -1,0 +1,49 @@
+.whom {
+    padding: 34px 0 0;
+
+    .container {
+        &::after {
+            @extend %br;
+        }
+    }
+
+    &__inner {
+        padding: 48px 40px 70px 40px;
+        margin-bottom: 50px;
+        background-color: $grey-bg-color;
+        border-radius: 25px;
+        @media screen and (max-width: 480px) {
+            padding: 35px 15px 25px 15px;
+        }
+    }
+
+    &__title {
+        @extend %section-title;
+        margin-bottom: clamp(1.5rem, 0.946rem + 2.77vw, 3.438rem);
+    }
+
+    &__text {
+        @extend %text;
+    }
+
+    &__swiper {
+        margin: 35px 0 50px;
+    }
+
+    &__swiper-slide img {
+        height: 245px;
+        object-fit: cover;
+        border-radius: 5px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__swiper-pagination {
+        display: none;
+    }
+
+    &__swiper-scrollbar {
+        display: none;
+    }
+}

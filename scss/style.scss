@@ -1,0 +1,26 @@
+@import 'abstracts/variables';
+@import 'abstracts/placeholders';
+@import 'abstracts/mixins';
+
+@import 'base/base';
+@import 'base/fonts';
+
+@import 'components/modals/modals';
+@import 'components/modals/modal-bookfl';
+@import 'components/modals/modal-tarrifs';
+
+@import 'layout/header';
+@import 'layout/hero';
+@import 'layout/whom';
+@import 'layout/aircraft';
+@import 'layout/tariffs';
+@import 'layout/payments';
+@import 'layout/offers';
+@import 'layout/gallary';
+@import 'layout/why';
+@import 'layout/blog';
+@import 'layout/text-line';
+@import 'layout/footer';
+@import 'layout/accordion';
+
+

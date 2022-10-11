@@ -1,0 +1,156 @@
+.offers {
+    .container {
+        &::after {
+            @extend %br;
+        }
+    }
+
+    &__inner {
+        padding: 54px 0 80px;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px 20px;
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            justify-content: unset;
+            gap: 0;
+        }
+    }
+
+    &__left {
+        flex: 0 1 413px;
+        @media screen and (max-width: 768px) {
+            flex: auto;
+        }
+    }
+
+    &__left-title {
+        @extend %section-title;
+        margin-bottom: 30px;
+        @media screen and (max-width: 768px) {
+            margin-left: 40px;
+        }
+        @media screen and (max-width: 480px) {
+            margin-left: 0;
+            text-align: center;
+        }
+    }
+
+    &__left-image {
+        display: none;
+    }
+
+    &__accordion {
+        flex: 0 1 916px;
+        @media screen and (max-width: 768px) {
+            flex: auto;
+        }
+    }
+
+    .accordion {
+        &__item {
+            cursor: pointer;
+            & + .accordion__item {
+                margin-top: 25px;
+            }
+        }
+    
+        &__item.active .accordion__body {
+            max-height: 3000px;
+        }
+
+        &__item.active .accordion__svg {
+            transform: rotate(45deg);
+        }
+
+        &__item.active .accordion__svg circle {
+            fill: $btn-bg-color;
+        }
+
+        &__item.active .accordion__question-title {
+            color: $btn-bg-color;
+        }
+    
+        &__question {
+            display: flex;
+            align-items: center;
+            &:hover {
+                .accordion__svg circle {
+                    transition: .3s ease-in;
+                    fill: $btn-bg-color;
+                }
+            }
+        }
+
+        &__question-title {
+            font-weight: 400;
+            font-size: 2.4rem;
+            line-height: 150%;
+            transition: color .3s ease;
+            @media screen and (max-width: 480px) {
+                font-size: 1.8rem;
+            }
+        }
+    
+        &__body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .7s ease-in;
+        }
+    
+        &__svg-box {
+            margin-right: 10px;
+            @media screen and (max-width: 480px) {
+                width: 45px;
+            }
+        }
+
+        &__svg {
+            transition: .4s ease-in-out;
+            @media screen and (max-width: 480px) {
+                width: 45px;
+                height: 45px;
+            }
+        }
+    
+        &__article {
+            font-weight: 300;
+            font-size: 1.6rem;
+            line-height: 150%;
+
+            &-text {
+                margin: 12px 0 30px;
+            }
+
+            &-text-span {
+                font-weight: 700;
+            }
+
+            &-title {
+                font-weight: 700;
+            }
+
+            &-list {
+                margin-bottom: 30px;
+            }
+
+            &-list-item {
+                list-style: unset;
+                list-style-position: inside;
+            }
+
+            &-btn {
+                display: inline-block;
+                padding: 16px 34px;
+                background: $btn-bg-color;
+                border-radius: 5px;
+                font-weight: 700;
+                font-size: 1.2rem;
+                line-height: 150%;
+                text-transform: uppercase;
+                color: $text-color-white;
+            }
+        }
+    }
+
+}

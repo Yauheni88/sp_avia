@@ -1,0 +1,122 @@
+.bookfl {
+    position: relative;
+    flex: 0 1 480px;
+    background-color: $text-color-white;
+    border-radius: 10px;
+    padding: 16px 20px 33px 20px;
+    margin: auto;
+
+    &__close-svg circle  {
+        transition: fill .3s ease-in;
+    }
+
+    &__close-svg {
+        position: absolute;
+        top: 16px;
+        right: 20px;
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+        &:hover circle {
+            fill: $btn-bg-color;
+        }
+    }
+
+    &__logo-svg path {
+        transition: fill .3s ease-in;
+    }
+
+    &__logo {
+        width: 73px;
+        height: 46px;
+        display: block;
+        margin: 0 auto 16px auto;
+        transition: fill .4s ease-in;
+        &:hover .bookfl__logo-svg path {
+            fill: $btn-bg-color;
+        }
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 2.4rem;
+        line-height: 150%;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+    }
+
+    &__form-label-1,
+    &__form-label-2  {
+        display: block;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 150%;
+        color: $light-grey;
+        margin-bottom: 10px;
+    }
+
+    &__form-name,
+    &__form-surname {
+        border: 1px solid #D9D9D9;
+        border-radius: 5px;
+        width: 100%;
+        height: 42px;
+        padding: 5px 10px;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 150%;
+        outline: none;
+    }
+
+    &__form-name {
+        margin-bottom: 20px;
+    }
+
+    &__form-surname {
+        margin-bottom: 10px;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: flex-start;
+        margin: 31px 0;
+    }
+
+    &__checkbox {
+        display: block;
+        width: 11px;
+        height: 11px;
+        margin: 4px 9px 0 0;
+        cursor: pointer;
+    }
+
+    &__text {
+        flex-basis: 418px;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 150%;
+        color: $light-grey;
+    }
+
+    &__text-link {
+        color: $btn-bg-color;
+    }
+
+    &__btn-send {
+        display: block;
+        padding: 16px 34px;
+        margin: 0 auto;
+        background: $btn-bg-color;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 1.2rem;
+        line-height: 1;
+        text-align: center;
+        text-transform: uppercase;
+        color: $text-color-white;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+}

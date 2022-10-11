@@ -1,0 +1,47 @@
+.payments {
+    .container {
+        &::after {
+            @extend %br;
+        }
+    }
+
+    &__inner {
+        padding: 54px 0 64px;
+    }
+
+    &__title {
+        @extend %section-title;
+        margin: 0 0 65px 40px;
+        @media screen and (max-width: 480px) {
+            margin: 0 0 30px 0;
+        }
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+        gap: 30px 20px;
+    }
+
+    &__card {
+        padding: 20px 15px;
+        background: $grey-bg-color;
+        border-radius: 15px;
+    }
+
+    &__card-text {
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 150%;
+        color: $text-color;
+        margin-top: 10px;
+    }
+
+    &__card-link {
+        color: $btn-bg-color;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

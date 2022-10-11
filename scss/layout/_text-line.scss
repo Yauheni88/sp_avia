@@ -1,0 +1,42 @@
+.text__line {
+    padding: 10px 0;
+    background-color: $grey-bg-color;
+
+    &-border {
+        position: relative;
+        height: 53px;
+        border-top: 0.5px solid $text-color;
+        border-bottom: 0.5px solid $text-color;
+    }
+
+    &-menu {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        left: 50%;
+        top: 17px;
+        transform: translateX(-50%);
+    }
+
+    &-item {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 1.2rem;
+        line-height: 150%;
+        text-transform: uppercase;
+        white-space: nowrap;
+
+        & + .text__line-item {
+            &::before {
+                content: '';
+                display: block;
+                width: 2px;
+                height: 15px;
+                margin: 0 10px;
+                background: #D9D9D9;
+            }
+        }
+    }
+}

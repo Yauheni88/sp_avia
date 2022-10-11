@@ -1,0 +1,86 @@
+.hero {
+    padding: 27px 0 0;
+
+    .container {
+        &::after {
+            @extend %br;
+        }
+    }
+
+    &__inner {
+        min-height: 450px;
+        background-image: url(./assets/img/hero-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 248px 47px 58px 56px;
+        border-radius: 20px;
+        
+        @media screen and (max-width: 768px) {
+            padding: 260px 11px 37px 11px;
+        }
+        @media screen and (max-width: 360px) {
+            min-height: 500px;
+            background-image: url(./assets/img/hero-bg-360.png);
+            padding: 321px 11px 37px 11px;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+
+        @media screen and (max-width: 1200px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+        }
+    }
+
+    &__title {
+        flex: 0 1 546px;
+        font-weight: 900;
+        font-size: clamp(1.5rem, 1.071rem + 2.14vw, 3rem);
+        line-height: 1.5;
+        text-align: right;
+        text-transform: uppercase;
+        color: $text-color-white;
+
+        @media screen and (max-width: 1200px) {
+            flex: unset;
+            text-align: center;
+        }
+    }
+
+    &__btn-book-flight {
+        flex: 0 1 219px;
+        height: fit-content;
+        background: $btn-bg-color;
+        border-radius: 5px;
+        padding: 16px 34px;
+        font-weight: 700;
+        font-size: 1.2rem;
+        line-height: 1;
+        text-transform: uppercase;
+        color: $text-color-white;
+        border: none;
+        outline: none;
+        margin-top: 72px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 1200px) {
+            flex: unset;
+            margin-top: 20px;
+        }
+    }
+
+    &__text {
+        max-width: 927px;
+        margin: clamp(1.25rem, 0.643rem + 3.04vw, 3.375rem) auto 70px;
+        @extend %text;
+        text-align: center;
+    }
+}

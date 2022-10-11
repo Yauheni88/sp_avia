@@ -1,0 +1,126 @@
+.why {
+    .container {
+        &::after {
+            @extend %br;
+        }
+    }
+
+    &__inner {
+        padding: 54px 0 80px;
+        @media screen and (max-width: 480px) {
+            padding: 30px 0 60px;
+        }
+    }
+
+    &__title {
+        @extend %section-title;
+        color: $text-color;
+        margin: 0 0 57px 40px;
+        @media screen and (max-width: 480px) {
+            margin: 0 0 30px 0;
+        }
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        gap: 30px 20px;
+        margin-bottom: 52px;
+    }
+
+    &__card {
+        position: relative;
+        padding: 34px 27px;
+        height: 407px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        flex-wrap: wrap;
+        z-index: -2;
+        
+        &:nth-child(1) {
+            background: url(./assets/img/why1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: linear-gradient(180deg, rgba(0, 14, 42, 0) 0%, #000E2A 100%);
+                z-index: -1;
+                border-radius: 15px;
+            }
+        }
+        &:nth-child(2) {
+            background: url(./assets/img/why2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: linear-gradient(180deg, rgba(0, 14, 42, 0) 0%, #4CA1DA 100%);
+                z-index: -1;
+                border-radius: 15px;
+            } 
+        }
+        &:nth-child(3) {
+            background: url(./assets/img/why3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: linear-gradient(180deg, rgba(0, 14, 42, 0) 0%, #D9D9D9 100%);
+                z-index: -1;
+                border-radius: 15px;
+            } 
+        }
+    }
+
+    &__card-title {
+        font-weight: 700;
+        font-size: 2.4rem;
+        line-height: 150%;
+        text-transform: uppercase;
+        color: $text-color-white;
+        margin-bottom: 13px;
+    }
+
+    &__card-text {
+        font-weight: 300;
+        font-size: 1.5rem;
+        line-height: 150%;
+        color: $text-color-white;
+    }
+
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        padding: 16px 34px;
+        background: $btn-bg-color;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 1.2rem;
+        line-height: 1;
+        text-align: center;
+        text-transform: uppercase;
+        color: $text-color-white;
+        border: none;
+        outline: none;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
