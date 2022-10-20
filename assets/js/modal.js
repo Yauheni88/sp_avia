@@ -22,6 +22,7 @@ modalCloseButtons.forEach(function(item) {
     item.addEventListener('click', function() {
         const modalVisible = this.closest('[data-modal]');
         modalVisible.classList.add('hidden');
+        document.body.classList.remove('hidden-y');
     })
 })
 
@@ -29,5 +30,6 @@ modalCloseButtons.forEach(function(item) {
 allModals.forEach(function(item) {
     item.addEventListener('click', function() {
         this.classList.add('hidden');
+        document.body.classList.remove('hidden-y');
     })
 })
