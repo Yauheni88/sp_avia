@@ -8,6 +8,7 @@ modalButtons.forEach(function (item) {
         const modalId = this.dataset.modalButton;
         const modal = document.querySelector('#' + modalId);
         modal.classList.remove('hidden');
+        document.body.classList.add('hidden-y');
 
         //находим внутри открываемой модалке элемент с классом и запрещаем передавать клики наверх
         modal.querySelector('.modal__window').addEventListener('click', function (e) {
