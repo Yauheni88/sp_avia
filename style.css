@@ -831,7 +831,7 @@ body {
 @media screen and (max-width: 1099px) {
   .whom__swiper {
     overflow: visible;
-    overflow-x: clip;
+    overflow-x: clip !important;
   }
 }
 .whom__swiper-slide img {
