@@ -70,11 +70,6 @@ body {
     padding: 0 15px;
   }
 }
-@media screen and (max-width: 480px) {
-  .container {
-    padding: 0 10px;
-  }
-}
 
 @font-face {
   font-family: "Museo Sans Cyrl";
@@ -472,6 +467,7 @@ body {
   color: #4CA1DA;
   border: none;
   outline: none;
+  background: inherit;
   display: inline-flex;
   cursor: pointer;
 }
@@ -832,9 +828,14 @@ body {
 .whom__swiper {
   margin: 35px 0 50px;
 }
+@media screen and (max-width: 1099px) {
+  .whom__swiper {
+    overflow: visible;
+    overflow-x: clip;
+  }
+}
 .whom__swiper-slide img {
-  height: 245px;
-  object-fit: cover;
+  width: 100%;
   border-radius: 5px;
 }
 .whom__swiper-slide img:hover {
@@ -842,6 +843,21 @@ body {
 }
 .whom__swiper-pagination {
   display: none;
+}
+@media screen and (max-width: 1099px) {
+  .whom__swiper-pagination {
+    display: unset;
+    bottom: -33px !important;
+  }
+}
+.whom__swiper-pagination .swiper-pagination-bullet {
+  width: 8px;
+  transition: all 0.4s;
+}
+.whom__swiper-pagination .swiper-pagination-bullet-active {
+  width: 24px;
+  border-radius: 4px;
+  background-color: #000E2A;
 }
 .whom__swiper-scrollbar {
   display: none;
