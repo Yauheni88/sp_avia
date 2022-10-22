@@ -830,6 +830,7 @@ body {
 }
 @media screen and (max-width: 1099px) {
   .whom__swiper {
+    overflow: unset;
     overflow-y: visible;
     overflow-x: clip !important;
   }
