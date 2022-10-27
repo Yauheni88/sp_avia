@@ -33,3 +33,6 @@ const swiper = new Swiper('.swiper', {
       }
     }
   });
+
+  
+  AOS.init();
