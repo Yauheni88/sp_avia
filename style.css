@@ -662,6 +662,7 @@ body {
     overflow: auto;
     transition: left 0.3s;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
   }
   .header__menu {
     flex: unset;
@@ -831,9 +832,10 @@ body {
 @media screen and (max-width: 1099px) {
   .whom__swiper {
     overflow: unset;
-    overflow-y: visible;
-    overflow-x: clip !important;
   }
+}
+.whom .hide-slides-x {
+  overflow: hidden;
 }
 .whom__swiper-slide img {
   width: 100%;

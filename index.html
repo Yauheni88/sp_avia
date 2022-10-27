@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="./assets/fancybox/fancybox.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
@@ -15,7 +16,7 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <a href="#" class="header__logo">
+                <a href="#" class="header__logo" data-aos="fade-right">
                     <svg width="73" height="46" viewBox="0 0 73 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_506_158)">
                         <path class="header__logo-svg" d="M34.9941 46L31.5521 42.3537V23.9817C31.6955 23.9817 1.29077 6.17073 0 0L34.9941 22.439V46Z" fill="#000E2A"/>
@@ -30,7 +31,7 @@
                         </defs>
                     </svg>                        
                 </a>
-                <nav class="header__navigation header__navigation-menu">
+                <nav class="header__navigation header__navigation-menu" data-aos="fade-down">
                     <ul class="header__menu">
                         <li class="header__item">
                             <a href="#whom" class="header__link">Для кого</a>
@@ -57,11 +58,11 @@
                             <a href="#footer" class="header__link">Контакты</a>
                         </li>
                     </ul>
-                    <div class="header__contacts">
+                    <div class="header__contacts" data-aos="fade-down">
                         <a href="tel:+7343000000" class="header__contacts-phone">+7 (343) 000 00 00</a>
                         <a href="mailto:info@mail.com" class="header__contacts-email">info@mail.com</a>
                     </div>
-                    <ul class="header__social">
+                    <ul class="header__social" data-aos="fade-down">
                         <li class="header__social-item">
                             <a href="#" class="header__social-whatsUp">
                                 <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -78,8 +79,8 @@
                         </li>
                     </ul>
                 </nav>
-                <button class="header__btn" data-modal-button="modal-1">забронировать полет</button>
-                <div class="header__hamburger">
+                <button class="header__btn" data-modal-button="modal-1" data-aos="fade-down">забронировать полет</button>
+                <div class="header__hamburger" data-aos="fade-left">
                     <svg class="header__hamburger-svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="25" cy="25" r="25" fill="#000E2A"/>
                         <rect x="13.6863" y="15.1005" width="3" height="30" rx="1.5" transform="rotate(-45 13.6863 15.1005)" fill="white"/>
@@ -95,11 +96,11 @@
             <div class="container">
                 <div class="hero__inner">
                     <div class="hero__wrapper">
-                        <h1 class="hero__title">Авиа прогулки над Екатеринбургом</h1>
-                        <button class="hero__btn-book-flight" data-modal-button="modal-1">забронировать полет</button>
+                        <h1 class="hero__title" data-aos="fade-up">Авиа прогулки над Екатеринбургом</h1>
+                        <button class="hero__btn-book-flight" data-modal-button="modal-1" data-aos="fade-up">забронировать полет</button>
                     </div>
                 </div>
-                <p class="hero__text">Хотите получить незабываемые впечатления? Почувствовать себя настоящим авиатором? 
+                <p class="hero__text" data-aos="fade-up">Хотите получить незабываемые впечатления? Почувствовать себя настоящим авиатором? 
                     Порадовать близкого человека? Прогулка на частном самолете над городом стала доступнее!
                 </p>
             </div>
@@ -109,26 +110,28 @@
         <section class="whom section" id="whom">
             <div class="container">
                 <div class="whom__inner">
-                    <h2 class="whom__title">Для кого?</h2>
-                    <p class="whom__text">Неважно, романтичная вы натура или авантюрист, мечтатель или прагматик, взрослый или ребенок. 
+                    <h2 class="whom__title" data-aos="fade-up">Для кого?</h2>
+                    <p class="whom__text" data-aos="fade-up">Неважно, романтичная вы натура или авантюрист, мечтатель или прагматик, взрослый или ребенок. 
                         Прогулка на самолете малой авиации подарит вам ни с чем несравнимые эмоции.
                     </p>
-                    <div class="whom__swiper swiper">
-                        <div class="whom__swiper-wrapper swiper-wrapper">
-                            <div class="whom__swiper-slide swiper-slide">
-                                <img src="./assets/img/whom1.png" data-fancybox="whom-slider" alt="">
-                            </div>
-                            <div class="whom__swiper-slide swiper-slide">
-                                <img src="./assets/img/whom2.png" data-fancybox="whom-slider" alt="">
-                            </div>
-                            <div class="whom__swiper-slide swiper-slide">
-                                <img src="./assets/img/whom3.png" data-fancybox="whom-slider" alt="">
-                            </div>
+                    <div class="hide-slides-x" data-aos="fade-up">
+                        <div class="whom__swiper swiper">
+                            <div class="whom__swiper-wrapper swiper-wrapper">
+                                <div class="whom__swiper-slide swiper-slide">
+                                    <img src="./assets/img/whom1.png" data-fancybox="whom-slider" alt="">
+                                </div>
+                                <div class="whom__swiper-slide swiper-slide">
+                                    <img src="./assets/img/whom2.png" data-fancybox="whom-slider" alt="">
+                                </div>
+                                <div class="whom__swiper-slide swiper-slide">
+                                    <img src="./assets/img/whom3.png" data-fancybox="whom-slider" alt="">
+                                </div>
+                                </div>
+                            <div class="whom__swiper-pagination swiper-pagination"></div>
+                            <div class="whom__swiper-scrollbar swiper-scrollbar"></div>
                         </div>
-                        <div class="whom__swiper-pagination swiper-pagination"></div>
-                        <div class="whom__swiper-scrollbar swiper-scrollbar"></div>
                     </div>
-                    <p class="whom__text">Незабываемые впечатления, потрясающие виды, фантастический опыт – всё это вы откроете для себя с нашей компанией.<br> 
+                    <p class="whom__text" data-aos="fade-up">Незабываемые впечатления, потрясающие виды, фантастический опыт – всё это вы откроете для себя с нашей компанией.<br> 
                         Свидание, экскурсия, фотосессия – доверьтесь нашей компании и испытайте по-настоящему высокий уровень сервиса!
                         </p>
                 </div>
@@ -139,13 +142,13 @@
         <section class="aircraft section" id="aircraft">
             <div class="container">
                 <div class="aircraft__inner">
-                    <div class="aircraft__left">
+                    <div class="aircraft__left" data-aos="zoom-in-right">
                         <h2 class="aircraft__title">На чем полетим?</h2>
                         <span class="aircraft__type">Cessna 172</span>
                         <p class="aircraft__description">Самолет вмещает до 3-х человек, либо 2 + фотограф</p>
                         <img class="aircraft__image" src="./assets/img/cesna172.png" alt="Самолет Cesna 172">
                     </div>
-                    <div class="aircraft__right">
+                    <div class="aircraft__right" data-aos="zoom-in-left">
                         <p class="aircraft__rigth-text">Прогулки проводятся на самом массовом и безопасном самолете 
                             в своем классе за всю историю: Cessna 172. 
                             Любовь авиаторов он заслужил невиданным ранее уровнем комфорта, надежности и управляемости.
@@ -159,15 +162,15 @@
         <section class="tariffs section" id="tariffs">
             <div class="container">
                 <div class="tariffs__inner">
-                    <h2 class="tariffs__title">Среди предложенных маршрутов каждый найдет для себя подходящий:</h2>
+                    <h2 class="tariffs__title" data-aos="fade-up">Среди предложенных маршрутов каждый найдет для себя подходящий:</h2>
                     <div class="tariffs__cards">
-                        <article class="tariffs__card" data-modal-button="modal-20">
+                        <article class="tariffs__card" data-modal-button="modal-20" data-aos="fade-right">
                             <span class="tariffs__card-number">20</span>
                             <h3 class="tariffs__card-title">Взлет-посадка</h3>
                             <p class="tariffs__card-text">20 минут – для тех, кому важны эмоции от взлета и посадки</p>
                             <a href="" class="tariffs__card-more">подробнее</a>
                         </article>
-                        <article class="tariffs__card" data-modal-button="modal-30">
+                        <article class="tariffs__card" data-modal-button="modal-30" data-aos="fade-up">
                             <span class="tariffs__card-number">30</span>
                             <h3 class="tariffs__card-title">обзорная</h3>
                             <p class="tariffs__card-text">30 минут – обзорная экскурсия над главной достопримечательностью в 
@@ -175,7 +178,7 @@
                             </p>
                             <a href="#" class="tariffs__card-more">подробнее</a>
                         </article>
-                        <article class="tariffs__card" data-modal-button="modal-45">
+                        <article class="tariffs__card" data-modal-button="modal-45" data-aos="fade-left">
                             <span class="tariffs__card-number">45</span>
                             <h3 class="tariffs__card-title">уральский марс</h3>
                             <p class="tariffs__card-text">45 минут – отправьтесь в настоящее путешествие над 
@@ -183,7 +186,7 @@
                             </p>
                             <a href="#" class="tariffs__card-more">подробнее</a>
                         </article>
-                        <article class="tariffs__card" data-modal-button="modal-60">
+                        <article class="tariffs__card" data-modal-button="modal-60" data-aos="fade-up">
                             <span class="tariffs__card-number">60</span>
                             <h3 class="tariffs__card-title">центр</h3>
                             <p class="tariffs__card-text">60 минут – откройте для себя Екатеринбург с новой стороны! 
@@ -192,16 +195,16 @@
                             <a href="#" class="tariffs__card-more">подробнее</a>
                         </article>
                     </div>
-                    <p class="tariffs__note">*Полет по Вашему маршруту! Согласовывается за ранее.</p>
-                    <button class="tariffs__btn btn__book-flight" data-modal-button="modal-1">забронировать полет</button>
+                    <p class="tariffs__note" data-aos="fade-up">*Полет по Вашему маршруту! Согласовывается за ранее.</p>
+                    <button class="tariffs__btn btn__book-flight" data-modal-button="modal-1" data-aos="fade-up">забронировать полет</button>
                 </div>
             </div>
         </section>
 
         <!-- модалка BookFl -->
         <div class="modal__box">
-            <div class="modals-fade hidden" id="modal-1" data-modal>
-                <div class="modal__window bookfl">
+            <div class="modals-fade hidden" id="modal-1" data-modal data-aos="fade-up">
+                <div class="modal__window bookfl" data-aos="fade-up">
                     <svg class="bookfl__close-svg" data-modal-close type="button" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="25" cy="25" r="25" fill="#000E2A"/>
                         <rect x="13.6863" y="15.1005" width="3" height="30" rx="1.5" transform="rotate(-45 13.6863 15.1005)" fill="white"/>
@@ -642,20 +645,20 @@
         <section class="payments section" id="payments">
             <div class="container">
                 <div class="payments__inner">
-                    <h2 class="payments__title">Бронирование и оплата</h2>
+                    <h2 class="payments__title" data-aos="fade-up">Бронирование и оплата</h2>
                     <div class="payments__wrapper">
-                        <div class="payments__card">
+                        <div class="payments__card" data-aos="fade-right">
                             <img class="payments__card-icon-phone" src="./assets/svg/payment-phone.svg" alt="иконка телефона">
                             <p class="payments__card-text">Чтобы забронировать прогулочный 
                                 полет свяжитесь с нами или оставьте <a class="payments__card-link" href="#">заявку на обратный звонок.</a>
                             </p>
                         </div>
-                        <div class="payments__card">
+                        <div class="payments__card" data-aos="fade-up">
                             <img class="payments__card-icon-pay" src="./assets/svg/payment-pay.svg" alt="иконка оплаты">
                             <p class="payments__card-text"><a class="payments__card-link" href="#">Оплата прогулочного полета</a> производится на сайте на странице выбранного маршрута.
                             </p>
                         </div>
-                        <div class="payments__card">
+                        <div class="payments__card" data-aos="fade-left">
                             <img class="payments__card-icon-certificate" src="./assets/svg/payment-certificate.svg" alt="иконка сертификата">
                             <p class="payments__card-text"><a class="payments__card-link" href="#">Подарочные сертификаты</a> на впечатления.
                                 Дарите электронные сертификаты прогулочных полетов удаленно.
@@ -670,14 +673,10 @@
             <div class="container">
                 <div class="offers__inner">
                     <div class="offers__left">
-                        <h2 class="offers__left-title">Особые предложения:</h2>
-                        <img class="offers__left-image" src="./assets/img/offers-1.png" loading="lazy" alt="картинка аккардеона">
-                        <img class="offers__left-image" src="./assets/img/offers-2.png" loading="lazy" alt="картинка аккардеона">
-                        <img class="offers__left-image" src="./assets/img/offers-3.png" loading="lazy" alt="картинка аккардеона">
-                        <img class="offers__left-image" src="./assets/img/offers-4.png" loading="lazy" alt="картинка аккардеона">
+                        <h2 class="offers__left-title" data-aos="fade-right">Особые предложения:</h2>
                     </div>
 
-                    <ul class="accordion offers__accordion">
+                    <ul class="accordion offers__accordion" data-aos="fade-left">
                         <li class="accordion__item">
                             <div class="accordion__question">
                                 <div class="accordion__svg-box">
@@ -821,23 +820,23 @@
         <section class="gallery section" id="gallery">
             <div class="container">
                 <div class="gallery__inner">
-                    <h2 class="gallery__title">галерея</h2>
+                    <h2 class="gallery__title" data-aos="fade-up">галерея</h2>
                     <div class="gallery__box">
-                        <img src="./assets/img/g1-1.png" loading="lazy" data-fancybox="gallery" alt="">
-                        <img src="./assets/img/g1-2.jpg" loading="lazy" data-fancybox="gallery" alt="">
-                        <img src="./assets/img/g1-3.jpg" loading="lazy" data-fancybox="gallery" alt="">
-                        <img src="./assets/img/g2-1.jpg" loading="lazy" data-fancybox="gallery" alt="">
-                        <img src="./assets/img/g2-2.jpg" loading="lazy" data-fancybox="gallery" alt="">
-                        <img src="./assets/img/g2-3.jpg" loading="lazy" data-fancybox="gallery" alt="">
-                        <img src="./assets/img/g3-1.jpg" loading="lazy" data-fancybox="gallery" alt="">
-                        <img src="./assets/img/g3-2.jpg" loading="lazy" data-fancybox="gallery" alt="">
-                        <img src="./assets/img/g3-3.jpg" loading="lazy" data-fancybox="gallery" alt="">
-                        <img src="./assets/img/g4-1.png" loading="lazy" data-fancybox="gallery" alt="">
-                        <img src="./assets/img/g4-2.jpg" loading="lazy" data-fancybox="gallery" alt="">
-                        <img src="./assets/img/g4-3.jpg" loading="lazy" data-fancybox="gallery" alt="">
-                        <img src="./assets/img/g5-1.jpg" loading="lazy" data-fancybox="gallery" alt="">
-                        <img src="./assets/img/g5-2.jpg" loading="lazy" data-fancybox="gallery" alt="">
-                        <img src="./assets/img/g5-3.jpg" loading="lazy" data-fancybox="gallery" alt="">
+                        <img src="./assets/img/g1-1.png" loading="lazy" data-fancybox="gallery" alt="" data-aos="fade-up">
+                        <img src="./assets/img/g1-2.jpg" loading="lazy" data-fancybox="gallery" alt="" data-aos="fade-up">
+                        <img src="./assets/img/g1-3.jpg" loading="lazy" data-fancybox="gallery" alt="" data-aos="fade-up">
+                        <img src="./assets/img/g2-1.jpg" loading="lazy" data-fancybox="gallery" alt="" data-aos="fade-up">
+                        <img src="./assets/img/g2-2.jpg" loading="lazy" data-fancybox="gallery" alt="" data-aos="fade-up">
+                        <img src="./assets/img/g2-3.jpg" loading="lazy" data-fancybox="gallery" alt="" data-aos="fade-up">
+                        <img src="./assets/img/g3-1.jpg" loading="lazy" data-fancybox="gallery" alt="" data-aos="fade-up">
+                        <img src="./assets/img/g3-2.jpg" loading="lazy" data-fancybox="gallery" alt="" data-aos="fade-up">
+                        <img src="./assets/img/g3-3.jpg" loading="lazy" data-fancybox="gallery" alt="" data-aos="fade-up">
+                        <img src="./assets/img/g4-1.png" loading="lazy" data-fancybox="gallery" alt="" data-aos="fade-up">
+                        <img src="./assets/img/g4-2.jpg" loading="lazy" data-fancybox="gallery" alt="" data-aos="fade-up">
+                        <img src="./assets/img/g4-3.jpg" loading="lazy" data-fancybox="gallery" alt="" data-aos="fade-up">
+                        <img src="./assets/img/g5-1.jpg" loading="lazy" data-fancybox="gallery" alt="" data-aos="fade-up">
+                        <img src="./assets/img/g5-2.jpg" loading="lazy" data-fancybox="gallery" alt="" data-aos="fade-up">
+                        <img src="./assets/img/g5-3.jpg" loading="lazy" data-fancybox="gallery" alt="" data-aos="fade-up">
                     </div>
                 </div>
             </div>
@@ -847,28 +846,28 @@
         <section class="why section" id="why">
             <div class="container">
                 <div class="why__inner">
-                    <h2 class="why__title">Почему мы? </h2>
+                    <h2 class="why__title" data-aos="fade-up">Почему мы? </h2>
                     <div class="why__wrapper">
-                        <article class="why__card">
+                        <article class="why__card" data-aos="fade-right">
                             <h4 class="why__card-title">Единственные</h4>
                             <p class="why__card-text">Мы единственная частная авиакомпания Свердловской области, 
                                 предоставляющая услуги по организации прогулочных полетов
                             </p>
                         </article>
-                        <article class="why__card">
+                        <article class="why__card" data-aos="fade-up">
                             <h4 class="why__card-title">команда</h4>
                             <p class="why__card-text">В нашей команде только профессиональные пилоты, 
                                 имеющие многолетний стаж и опыт тысячи часов налета в самых разных точках России.
                             </p>
                         </article>
-                        <article class="why__card">
+                        <article class="why__card" data-aos="fade-left">
                             <h4 class="why__card-title">Флот</h4>
                             <p class="why__card-text">Флот авиакомпании состоит только из своих самолетов, 
                                 регулярно проходящих квалифицированное техническое обслуживание.
                             </p>
                         </article>
                     </div>
-                    <button class="why__btn btn__book-flight" data-modal-button="modal-1">забронировать полет</button>
+                    <button class="why__btn btn__book-flight" data-modal-button="modal-1" data-aos="fade-up">забронировать полет</button>
                 </div>
             </div>
         </section>
@@ -877,9 +876,9 @@
         <section class="blog section" id="blog">
             <div class="container">
                 <div class="blog__inner">
-                    <h2 class="blog__title">БЛОГ, Акции, предложения</h2>
+                    <h2 class="blog__title" data-aos="fade-up">БЛОГ, Акции, предложения</h2>
                     <div class="blog__wrapper">
-                        <article class="blog__card">
+                        <article class="blog__card" data-aos="fade-right">
                             <a href="" class="blog__card-link">
                                 <img class="blog__card-image" src="./assets/img/blog1.jpg" loading="lazy" alt="Картинка статьи">
                             </a>
@@ -888,7 +887,7 @@
                             </p>
                             <a href="#" class="blog__card-more">читать далее</a>
                         </article>
-                        <article class="blog__card">
+                        <article class="blog__card" data-aos="fade-up">
                             <a href="" class="blog__card-link">
                                 <img class="blog__card-image" src="./assets/img/blog2.jpg" loading="lazy" alt="Картинка статьи">
                             </a>
@@ -897,7 +896,7 @@
                             </p>
                             <a href="#" class="blog__card-more">читать далее</a>
                         </article>
-                        <article class="blog__card">
+                        <article class="blog__card" data-aos="fade-left">
                             <a href="" class="blog__card-link">
                                 <img class="blog__card-image" src="./assets/img/blog3.jpg" loading="lazy" alt="Картинка статьи">
                             </a>
@@ -908,13 +907,13 @@
                             <a href="#" class="blog__card-more">читать далее</a>
                         </article>
                     </div>
-                    <button class="blog__btn">Читать все статьи</button>
+                    <button class="blog__btn" data-aos="fade-up">Читать все статьи</button>
                 </div>
             </div>
         </section>
 
 
-        <div class="text__line">
+        <div class="text__line" data-aos="fade-up">
             <div class="text__line-border">
                 <ul class="text__line-menu">
                     <li class="text__line-item">
@@ -939,10 +938,10 @@
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__wrapper">
-                    <h2 class="footer__wrapper-title">Контакты</h2>
+                    <h2 class="footer__wrapper-title" data-aos="fade-up">Контакты</h2>
                     <div class="footer__wrapper-right">
-                        <span class="footer__wrapper-span">Екатеринбург, каким его видели только вы!</span>
-                        <a class="footer__wrapper-logo-link" href="#">
+                        <span class="footer__wrapper-span" data-aos="fade-up">Екатеринбург, каким его видели только вы!</span>
+                        <a class="footer__wrapper-logo-link" href="#" data-aos="fade-up">
                             <svg class="footer__wrapper-logo-svg" width="73" height="46" viewBox="0 0 73 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_506_158)">
                                 <path d="M34.9941 46L31.5521 42.3537V23.9817C31.6955 23.9817 1.29077 6.17073 0 0L34.9941 22.439V46Z" fill="#000E2A"/>
@@ -961,13 +960,13 @@
                 </div>
                 <hr class="footer__hr">
                 <div class="footer__wrapper-bottom">
-                    <div class="footer__wrapper-adress">
+                    <div class="footer__wrapper-adress" data-aos="fade-right">
                         <h4 class="footer__wrapper-adress-title">ООО «АвиаТЕХ»</h4>
                         <p class="footer__wrapper-adress-text">620066, Свердловская обл., г. Екатеринбург, ул. Мамина-Сибиряка 101, оф. 2.27</p>
                         <p class="footer__wrapper-adress-text">ИНН 6670508601 | КПП 667001001</p>
                         <p class="footer__wrapper-adress-text">ОГРН 1226600026124</p>
                     </div>
-                    <div class="footer__box">
+                    <div class="footer__box" data-aos="fade-up">
                         <div class="footer__wrapper-phone">
                             <span class="footer__wrapper-subtitle">Телефон:</span>
                             <a class="footer__wrapper-phone-link" href="tel:+7343000000">+7 (343) 000-00-00 </a>
@@ -996,7 +995,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="footer__wrapper-policy">
+                    <div class="footer__wrapper-policy" data-aos="fade-left">
                         <a class="footer__wrapper-policy-text" href="#">Политика конфиденциальности</a>
                     </div>
                 </div>
@@ -1010,6 +1009,7 @@
     <script src="./assets/fancybox/fancybox.umd.js"></script>
     <script src="./assets/js/accordion.js"></script>
     <script src="./assets/js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/burger.js"></script>
 </body>
